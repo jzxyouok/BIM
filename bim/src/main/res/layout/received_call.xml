@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/background"
+    android:keepScreenOn="true">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/screen_padding"
+        android:paddingBottom="100dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/calleeAvatar"
+            android:src="@mipmap/personphoto"
+            android:contentDescription="@string/service_gui_CALL"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/avatar_height"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="@dimen/between_padding" />
+
+        <TextView
+            android:id="@+id/calleeDisplayName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="@dimen/between_padding"
+            android:text="some.long.name@sip-communicator.org"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/calleeAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/label_text_size"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="@dimen/between_padding"
+            android:text="name@sip-communicator.org/jitsi-randowm23!@43$"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+    <!-- ImageView
+        android:id="@+id/fadeBackground"
+        android:src="@drawable/fade"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="0px"/-->
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="#40000000">
+
+        <ImageButton
+            android:id="@+id/answerVideoButton"
+            android:src="@mipmap/acceptvideocall"
+            android:background="@drawable/image_button_background"
+            android:contentDescription="@string/accept_call_video"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:focusable="true"
+            android:onClick="onAnswerWithVideoClicked" />
+
+        <ImageButton
+            android:id="@+id/callButton"
+            android:src="@mipmap/callbutton"
+            android:background="@drawable/image_button_background"
+            android:contentDescription="@string/service_gui_CALL"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:focusable="true" />
+
+        <ImageButton
+            android:id="@+id/hangupButton"
+            android:src="@mipmap/callhangup"
+            android:background="@drawable/image_button_background"
+            android:contentDescription="@string/hang_up"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:focusable="true" />
+    </LinearLayout>
+</RelativeLayout>

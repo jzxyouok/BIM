@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BIM.iml" filepath="$PROJECT_DIR$/BIM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bim/bim.iml" filepath="$PROJECT_DIR$/bim/bim.iml" />
+      <module fileurl="file://$PROJECT_DIR$/native-awtrenderer/native-awtrenderer.iml" filepath="$PROJECT_DIR$/native-awtrenderer/native-awtrenderer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/native-ffmpeg/native-ffmpeg.iml" filepath="$PROJECT_DIR$/native-ffmpeg/native-ffmpeg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/native-g722/native-g722.iml" filepath="$PROJECT_DIR$/native-g722/native-g722.iml" />
+      <module fileurl="file://$PROJECT_DIR$/native-openmax/native-openmax.iml" filepath="$PROJECT_DIR$/native-openmax/native-openmax.iml" />
+      <module fileurl="file://$PROJECT_DIR$/native-opensles/native-opensles.iml" filepath="$PROJECT_DIR$/native-opensles/native-opensles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/native-opus/native-opus.iml" filepath="$PROJECT_DIR$/native-opus/native-opus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/native-speex/native-speex.iml" filepath="$PROJECT_DIR$/native-speex/native-speex.iml" />
+    </modules>
+  </component>
+</project>

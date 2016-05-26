@@ -1,0 +1,206 @@
+apply plugin: 'com.android.model.application'
+
+model {
+    android {
+        compileSdkVersion = 23
+        buildToolsVersion = "23.0.3"
+
+        defaultConfig {
+            applicationId "com.bmtech.im"
+            minSdkVersion.apiLevel 14
+            targetSdkVersion.apiLevel 22
+            versionCode 4
+            versionName "1.0.6"
+
+            // Enable the experimental Jack build tools.
+            //useJack true
+
+            // Enabling multidex support.
+            multiDexEnabled true
+
+            buildConfigFields {
+                create() {
+                    type = "int"
+                    name = "VALUE"
+                    value = "1"
+                }
+            }
+        }
+
+
+
+        ndk {
+            // All configurations that can be changed in android.ndk.
+            moduleName = "hello-jni"
+            toolchain = "clang"
+            toolchainVersion = "3.5"
+            // Note that CFlags has a capital C, which is inconsistent with
+            // the naming convention of other properties.  This is a
+            // technical limitation that will be resolved
+            CFlags.add("-DCUSTOM_DEFINE")
+            cppFlags.add("-DCUSTOM_DEFINE")
+            ldFlags.add("-L/custom/lib/path")
+            ldLibs.add("android")
+            ldLibs.add("EGL")
+            ldLibs.add("GLESv2")
+            ldLibs.add("dl")
+            ldLibs.add("log")
+            stl "stlport_static"
+        }
+    }
+
+    android.buildTypes {
+        //debug {
+          //  minifyEnabled = false
+            //proguardFiles.add(file('proguard-rules.pro'))
+            //applicationIdSuffix = ".debug"
+        //}
+        release {
+            shrinkResources = true
+            zipAlignEnabled = true
+            minifyEnabled = false
+            useProguard = true
+            proguardFiles.add(file('proguard-rules.pro'))
+            println 'STORE_FILE:'
+            signingConfig = $("android.signingConfigs.bmconfig")
+            //ndk {
+              //  debuggable true
+            //}
+        }
+    }
+
+    // You can modify the NDK configuration for each variant.
+    //components.android {
+    //        binaries.afterEach { binary -> binary.mergedNdkConfig.cppFlags.add("-DVARIANT=\"" + binary.name + "\"")
+    //    }
+    //}
+
+/*
+    productFlavors {
+        // for detailed abiFilter descriptions, refer to "Supported ABIs" @ https://developer.android.com/ndk/guides/abis.html#sa
+        // To include all cpu architectures, leaves abiFilters empty
+        create("all")
+
+        create("arm") {
+            abiFilters.add("armeabi")
+        }
+
+        create("arm7") {
+            abiFilters.add("armeabi-v7a")
+        }
+
+        create("arm8") {
+            abiFilters.add("arm64-v8a")
+        }
+
+        create("x86") {
+            abiFilters.add("x86")
+        }
+
+        create("x86-64") {
+            abiFilters.add("x86_64")
+        }
+
+        create("mips") {
+            abiFilters.add("mips")
+        }
+
+        create("mips-64") {
+            abiFilters.add("mips64")
+        }
+
+        //create("app-0.0.4") {
+        //    ndk.abiFilters += "armeabi-v7a"
+        //    versionName = "0.0.5"
+        //}
+    }*/
+
+    android.signingConfigs {
+        create("bmconfig") {
+            storeType = "jks"
+            storeFile = file("bim")
+            storePassword = "bmtech";//new String(System.console().readPassword("\nKeystore password: "))
+            keyAlias = "bim"
+            keyPassword = "bmtech";//new String(System.console().readPassword("\nKey password: "))
+        }
+    }
+
+    android.dexOptions {
+        incremental = false
+        preDexLibraries = false
+        jumboMode = true
+        javaMaxHeapSize = "4g"
+    }
+
+    android.lintOptions {
+        abortOnError = false
+    }
+
+    android.compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_7
+        targetCompatibility = JavaVersion.VERSION_1_7
+    }
+
+    android.packagingOptions {
+        excludes = ['META-INF/LICENSE.txt', 'META-INF/NOTICE.txt']
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    //compile(name:'jitsi-release', ext:'aar')
+    compile project(':bim')
+    compile 'com.android.support:design:23.3.0'
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.android.support:support-v4:23.3.0'
+    compile 'com.android.support:cardview-v7:23.3.0'
+    compile 'com.android.support:recyclerview-v7:23.3.0'
+    compile 'com.android.support:multidex:1.0.1'
+
+    // An image loading and caching library for Android focused on smooth scrolling
+    compile 'com.github.bumptech.glide:glide:3.6.0'
+
+    // A circular ImageView for Android
+    compile 'de.hdodenhof:circleimageview:1.3.0'
+
+    // [DEPRECATED] Android library for using the Honeycomb animation API on all versions of the platform back to 1.0
+    //compile 'com.nineoldandroids:library:2.4.0'
+
+    // Process Phoenix facilitates restarting your application process.
+    //compile 'com.jakewharton:process-phoenix:1.0.0'
+
+    // Android ImageViews animated by Ken Burns Effect
+    //compile 'com.flaviofaria:kenburnsview:1.0.6'
+
+    //compile 'com.jpardogo.materialtabstrip:library:1.0.9'
+
+    // Android library to observe scroll events on scrollable views.
+    //compile 'com.github.ksoichiro:android-observablescrollview:1.5.0'
+
+    // A simple take on creating an easy to use and fast material navigation drawer implementation.
+    compile('com.mikepenz:materialdrawer:4.0.0@aar') {
+        transitive = true
+    }
+
+    // AboutLibraries is a library to offer some information of libraries.
+    compile('com.mikepenz:aboutlibraries:5.2.0@aar') {
+        transitive = true
+    }
+
+    // Android-Iconics is a library to use (almost) any alternative iconfont in your projects.
+    //compile 'com.mikepenz:iconics:1.2.1@aar'
+    compile 'com.mikepenz:google-material-typeface:1.2.0.1@aar'
+    compile 'com.mikepenz:fontawesome-typeface:4.4.0.1@aar'
+    compile 'com.mikepenz:octicons-typeface:3.0.0.1@aar'
+
+    // A powerful image downloading and caching library for Android
+    //compile 'com.squareup.picasso:picasso:2.5.2'
+
+    // An HTTP+SPDY client for Android and Java applications.
+    compile 'com.squareup.okhttp:okhttp:2.4.0'
+
+    //compile 'com.github.bumptech.glide:glide:3.5.2'
+
+    //compile 'com.loopj.android:android-async-http:1.4.7'
+
+}

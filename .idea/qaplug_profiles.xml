@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisProjectProfileManager">
+    <option name="PROJECT_PROFILE" value="Project Default" />
+    <option name="USE_PROJECT_LEVEL_SETTINGS" value="false" />
+    <scopes />
+    <profiles>
+      <profile version="1.0" is_locked="false">
+        <option name="myName" value="Project Default" />
+        <coding_rule class="AbstractMethodFromConstructorInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="AccessToStaticMembersInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="AlphabeticalImportInspector" level="MAJOR" enabled="false">
+          <param name="importOrder" value="java,javax,org,com" />
+        </coding_rule>
+        <coding_rule class="ArrayDeclarationInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="AssignmentInsideConditionalInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="BooleanEqualityInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="BraceInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="CatchTooGeneralExceptionTypeInspector" level="MAJOR" enabled="false">
+          <param name="tooGeneralExceptions" value="java.lang.Exception,java.lang.RuntimeException,java.lang.Throwable,java.lang.Error" />
+        </coding_rule>
+        <coding_rule class="ChainExceptionsInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="CodeTooLongInspector" level="MAJOR" enabled="false">
+          <param name="maxLength" value="200" />
+        </coding_rule>
+        <coding_rule class="ConditionalExpressionInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="ConstructorWithoutSuperInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="ContinueInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="CyclomaticComplexityInspector" level="MAJOR" enabled="false">
+          <param name="operationMaxComplexity" value="12" />
+        </coding_rule>
+        <coding_rule class="DirectoryStructureInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="DoNotConstructBigDecimalFromDecimalLiteralsInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="DoNotConstructPredefinedBigDecimalsInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="DoNotUseNewForBooleanInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="DoNotUseNewForStringsInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="DoNotUseTypeInspector" level="MAJOR" enabled="false">
+          <param name="deprecatedTypes" value="java.util.Vector" />
+        </coding_rule>
+        <coding_rule class="DotChainInspector" level="MAJOR" enabled="false">
+          <param name="maxChain" value="10" />
+        </coding_rule>
+        <coding_rule class="DuplicateImportInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="EmptyBodiesInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="EmptyCatchBlockInspector" level="MAJOR" enabled="false">
+          <param name="exempts" value="java.lang.NumberFormatException" />
+        </coding_rule>
+        <coding_rule class="EmptySourceUnitInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="EmptyStatementsInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="EmptyTryOrFinallyBlockInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="FileHeaderInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="FinalParametersInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="ForConditionInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="ForInitInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="ForIteratorInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="ForLoopControlVariablesInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="HardcodedCharacterLiteralsInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="HardcodedNumericLiteralsInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="HardcodedStringLiteralsInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="HidingInheritedFieldsInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="InnerClassNestingInspector" level="MAJOR" enabled="false">
+          <param name="maxNesting" value="2" />
+        </coding_rule>
+        <coding_rule class="InnerClassVisibilityInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="InterfaceMethodModifiersInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="InvokeFinalizeInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="JavaDocInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="JavaLangImportInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="LineLengthInspector" level="MAJOR" enabled="false">
+          <param name="maxLineLength" value="80" />
+        </coding_rule>
+        <coding_rule class="LogicalNestingInspector" level="MAJOR" enabled="false">
+          <param name="maxNesting" value="5" />
+        </coding_rule>
+        <coding_rule class="MaxLinesInFileInspector" level="MAJOR" enabled="false">
+          <param name="maxLength" value="2000" />
+        </coding_rule>
+        <coding_rule class="MethodNameSameAsConstructorInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="MinimalInstanceVariableLengthInspector" level="MAJOR" enabled="false">
+          <param name="minLength" value="3" />
+        </coding_rule>
+        <coding_rule class="MissingPackageDeclarationInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="ModifiersOrderInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="NamingStandardInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="NoPublicFieldsInspector" level="MAJOR" enabled="false">
+          <param name="finalAllowed" value="true" />
+          <param name="staticFinalAllowed" value="true" />
+        </coding_rule>
+        <coding_rule class="NoStarImportsInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="NotifyInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="ObjectEqualsInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="OneStatementPerLineInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="OneTypePerFileInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="OperationParameterNamesInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="OperationWithRuntimeExceptionInThrowsInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="OperationWithTooGeneralExceptonTypeInThrowsInspector" level="MAJOR" enabled="false">
+          <param name="tooGeneralExceptionTypes" value="java.lang.Exception,java.lang.RuntimeException,java.lang.Throwable,java.lang.Error" />
+        </coding_rule>
+        <coding_rule class="OverrideEqualsAndHashCodeInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="PrintStackTraceInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="PublicStaticArrayFieldsInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="RedundantParenthesisInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="ReturnFromFinallyInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="RootPackageInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="StaticCollectionsInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="StringLiteralEqualsInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="SuperCloneInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="SwitchCaseBreakInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="SwitchDefaultInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="SynchronizedInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="SystemGcMisuseInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="SystemPrintlnLoggingInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="ThreadSubclassesInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="ThreadYieldInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="ThrowTooGeneralExceptionTypeInspector" level="MAJOR" enabled="false">
+          <param name="tooGeneralExceptionTypes" value="java.lang.Exception,java.lang.RuntimeException,java.lang.Throwable,java.lang.Error" />
+        </coding_rule>
+        <coding_rule class="ThrowsClauseInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="TooManyParametersInspector" level="MAJOR" enabled="false">
+          <param name="maxParameters" value="7" />
+        </coding_rule>
+        <coding_rule class="TooManyThrowsInspector" level="MAJOR" enabled="false">
+          <param name="maxThrows" value="3" />
+        </coding_rule>
+        <coding_rule class="UnconditionalIfInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="UnnecessaryCastOrInstanceofInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="UnnecessaryElseInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="UpperLInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="UseBigDecimalInsteadOfFloatAndDoubleInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="UseCollectionsInsteadOfArraysInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="UseEqualsInsteadOfCompareToInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="UselessOperationOnImmutableInspector" level="MAJOR" enabled="false">
+          <param name="immutables" value="java.lang.Object,java.lang.String,java.math.BigDecimal,java.math.BigInteger,java.lang.Number,java.lang.Byte,java.lang.Double,java.lang.Float,java.lang.Integer,java.lang.Long,java.lang.Short,java.lang.Boolean,java.lang.Character" />
+        </coding_rule>
+        <coding_rule class="VariableNameClashesWithTypeNameInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="VariablesAndMethodsNameClashingInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="VariablesInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="VendorNameInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="WaitAndNotifyInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="WaitAndNotifyInsteadOfPollingInspector" level="MAJOR" enabled="false" />
+        <coding_rule class="WaitInLoopInspector" level="MAJOR" enabled="false" />
+      </profile>
+    </profiles>
+    <list size="0" />
+  </component>
+</project>

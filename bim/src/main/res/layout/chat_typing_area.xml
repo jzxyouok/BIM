@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/chatTypingArea"
+    android:background="@color/blue"
+    android:padding="6dp">
+
+    <ImageView
+        android:id="@+id/chatWriteTextBg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/white_rounded"
+        android:layout_alignTop="@+id/sendMessageButton"
+        android:layout_alignBottom="@+id/sendMessageButton"
+        android:layout_toLeftOf="@+id/sendMessageButton"
+        android:layout_toStartOf="@+id/sendMessageButton"
+        android:layout_marginLeft="3dp"
+        android:layout_marginStart="3dp"
+        android:contentDescription="@string/module_name"/>
+
+    <EditText
+        android:id="@+id/chatWriteText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:padding="5dp"
+        android:background="@null"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/blue"
+        android:imeOptions="actionSend|flagNoExtractUi"
+        android:singleLine="true"
+        android:textCursorDrawable="@null"
+        android:inputType="text"
+        android:layout_alignTop="@+id/chatWriteTextBg"
+        android:layout_alignBottom="@+id/chatWriteTextBg"
+        android:layout_toRightOf="@+id/editingImage"
+        android:layout_toLeftOf="@+id/cancelCorrectionBtn"
+        android:layout_toStartOf="@+id/cancelCorrectionBtn"
+        android:layout_toEndOf="@+id/editingImage"/>
+
+    <ImageButton
+        android:id="@+id/sendMessageButton"
+        android:src="@mipmap/send_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:padding="3dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:minHeight="40dp"
+        android:minWidth="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="@string/module_name"/>
+
+    <ImageView
+        android:id="@+id/editingImage"
+        android:src="@mipmap/editing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:layout_alignStart="@+id/chatWriteTextBg"
+        android:layout_alignLeft="@+id/chatWriteTextBg"
+        android:contentDescription="@string/module_name"/>
+
+    <ImageButton
+        android:id="@+id/cancelCorrectionBtn"
+        android:src="@mipmap/reset_editing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:minWidth="40dp"
+        android:minHeight="40dp"
+        android:layout_toLeftOf="@+id/sendMessageButton"
+        android:layout_toStartOf="@+id/sendMessageButton"
+        android:contentDescription="@string/module_name"/>
+</RelativeLayout>

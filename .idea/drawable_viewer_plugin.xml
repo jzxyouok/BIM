@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidDrawableViewer">
+    <option name="hdpi" value="true" />
+    <option name="mdpi" value="true" />
+    <option name="resDir" value="D:\broadmap\explore\im\idea\BIM\app\src\main\res" />
+    <option name="xhdpi" value="true" />
+    <option name="xxhdpi" value="true" />
+    <option name="xxxhdpi" value="true" />
+  </component>
+</project>

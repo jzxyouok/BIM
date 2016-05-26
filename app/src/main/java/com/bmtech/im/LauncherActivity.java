@@ -1,0 +1,111 @@
+package com.bmtech.im;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
+
+import org.jitsi.android.gui.ShutdownActivity;
+import org.jitsi.service.osgi.OSGiActivity;
+import org.jitsi.service.osgi.OSGiService;
+import org.osgi.framework.BundleContext;
+
+/**
+ * The splash screen fragment displays animated Jitsi logo and indeterminate
+ * progress indicators.
+ * <p/>
+ * <p/>
+ * TODO: Evetually add exit option to the launcher
+ * Currently it's not possible to cancel OSGi startup.
+ * Attempt to stop service during startup is causing immediate
+ * service restart after shutdown even with synchronization of
+ * onCreate and OnDestroy commands. Maybe there is still some reference
+ * to OSGI service being held at that time ?
+ * <p/>
+ * TODO: Prevent from recreating this Activity on startup
+ * On startup when this Activity is recreated it will also destroy
+ * OSGiService which is currently not handled properly. Options specified
+ * in AndroidManifest.xml should cover most cases for now:
+ * android:configChanges="keyboardHidden|orientation|screenSize"
+ *
+ * @author Pawel Domas
+ */
+public class LauncherActivity extends OSGiActivity {
+    /**
+     * Argument that holds an <tt>Intent</tt> that will be started once OSGi
+     * startup is finished.
+     */
+    //public static final String ARG_RESTORE_INTENT = "ARG_RESTORE_INTENT";
+
+    /**
+     * Intent instance that will be called once OSGi startup is finished.
+     */
+    private Intent restoreIntent = null;
+
+    static {
+        System.loadLibrary("hello-jni");
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        // Request indeterminate progress for splash screen
+        //requestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS);
+
+        super.onCreate(savedInstanceState);
+
+        if (OSGiService.isShuttingDown()) {
+            switchActivity(ShutdownActivity.class);
+            return;
+        }
+
+        //setProgressBarIndeterminateVisibility(true);
+
+        setContentView(R.layout.activity_launcher);
+
+        // Starts fade in animation
+        ImageView myImageView = (ImageView) findViewById(R.id.loadingImage);
+        Animation myFadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.fadein);
+
+        if(myImageView!=null){
+            myImageView.startAnimation(myFadeInAnimation);
+        }
+
+        // Get restore Intent and display "Restoring..." label
+
+        /* lycoris
+        Intent intent = getIntent();
+
+        if (intent != null){
+            this.restoreIntent = intent.getParcelableExtra(ARG_RESTORE_INTENT);
+        }
+        */
+
+        View restoreView = findViewById(R.id.restoring);
+
+        if(restoreView != null){
+            restoreView.setVisibility(restoreIntent != null ? View.VISIBLE : View.GONE);
+        }
+    }
+
+    @Override
+    protected void start(BundleContext osgiContext) throws Exception {
+        super.start(osgiContext);
+
+        runOnUiThread(new Runnable() {
+            public void run() {
+                if (restoreIntent != null) {
+                    // Starts restore intent
+                    startActivity(restoreIntent);
+                    finish();
+                }
+                else {
+                    // Start home screen Activity
+                    switchActivity(BIMApplication.getHomeScreenActivityClass());
+                }
+            }
+        });
+    }
+
+}

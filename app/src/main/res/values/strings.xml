@@ -1,0 +1,40 @@
+<resources>
+
+    <string name="app_name">博图通讯</string>
+    <string name="company_name">©2015 北京博图纵横科技有限责任公司</string>
+
+    <string name="inbox">Inbox</string>
+    <string name="starred">Starred</string>
+    <string name="sent_mail">Sent Mail</string>
+    <string name="drafts">Drafts</string>
+    <string name="categories">Categories</string>
+    <string name="trash">Trash</string>
+    <string name="spam">Spam</string>
+
+    <string name="add">Add</string>
+    <string name="search">Search</string>
+
+    <!-- Toast -->
+    <string name="open_user_profile">Open user profile</string>
+    <string name="open_settings">Open settings</string>
+
+
+    <!-- Sample menu -->
+    <string name="action_settings">Settings</string>
+
+    <!-- Drawer Items -->
+    <string name="drawer_item_menu1">主页</string>
+    <string name="drawer_item_menu2">添加新账号</string>
+    <string name="drawer_item_menu3">创建用户组</string>
+    <string name="drawer_item_menu4">账户信息</string>
+    <string name="drawer_item_menu5">注销账户</string>
+    <string name="drawer_item_setting">系统设置</string>
+    <string name="drawer_item_menu7">退出系统</string>
+    <string name="drawer_item_menu8">更多</string>
+    <string name="drawer_item_update">检查更新</string>
+    <string name="drawer_item_sendlog">发送日志</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="hello_world">Hello world!</string>
+
+</resources>

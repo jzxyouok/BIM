@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    android:keepScreenOn="true">
+
+    <org.jitsi.android.gui.call.RemoteVideoLayout
+        android:id="@+id/remoteVideoContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/red"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:id="@+id/localPreviewContainer"
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <ImageButton
+            android:id="@+id/reversal_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/image_button_background"
+            android:contentDescription="@string/reversal_camera"
+            android:src="@mipmap/ic_reversal_camera" />
+
+        <LinearLayout
+            android:id="@+id/callInfoGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:focusable="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/calleeAvatar"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/avatar_height"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/service_gui_CALL"
+                android:paddingBottom="@dimen/between_padding"
+                android:src="@mipmap/personphoto" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/call_status_bg"
+                android:gravity="center_vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/callStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/security_group"
+                    android:layout_toRightOf="@+id/security_group"
+                    android:gravity="center_vertical"
+                    android:text="{call status}"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/label_text_size" />
+
+                <RelativeLayout
+                    android:id="@+id/security_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/orange_padlock">
+
+                    <TextView
+                        android:id="@+id/security_protocol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="{proto}"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/label_text_size" />
+
+                    <ImageView
+                        android:id="@+id/security_padlock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/security_protocol"
+                        android:layout_toRightOf="@+id/security_protocol"
+                        android:src="@mipmap/secure_off" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/callTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/callStatus"
+                    android:layout_toRightOf="@+id/callStatus"
+                    android:text="00:00:00"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/label_text_size" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <include
+            android:id="@+id/clickable_toast"
+            layout="@layout/clickable_toast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="125dp"
+        android:layout_alignParentBottom="true"
+        android:background="#40000000"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <!-- 免提 -->
+        <ImageButton
+            android:id="@+id/speakerphoneButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/image_button_background"
+            android:contentDescription="@string/service_gui_VOLUME_CONTROL_TOOL_TIP"
+            android:focusable="true"
+            android:onClick="onSpeakerphoneClicked"
+            android:src="@mipmap/ic_call_speaker" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/speakerphoneButton"
+            android:text="　免提　"
+            android:textSize="10sp" />
+
+        <!-- 静音 -->
+        <ImageButton
+            android:id="@+id/callMicrophoneButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/image_button_background"
+            android:contentDescription="@string/service_gui_MUTE_BUTTON_TOOL_TIP"
+            android:focusable="true"
+            android:src="@mipmap/ic_call_microphone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="10dp"
+            android:text="　静音　"
+            android:textSize="10sp" />
+
+        <!-- 挂断 -->
+        <ImageButton
+            android:id="@+id/callHangupButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/image_button_background"
+            android:contentDescription="@string/hang_up"
+            android:focusable="true"
+            android:src="@mipmap/ic_call_hangup" />
+
+        <!-- 摄像头 -->
+        <ImageButton
+            android:id="@+id/callVideoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/image_button_background"
+            android:contentDescription="@string/service_gui_LOCAL_VIDEO_BUTTON_TOOL_TIP"
+            android:focusable="true"
+            android:src="@mipmap/ic_call_video" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/callVideoButton"
+            android:text="　摄像头　"
+            android:textSize="10sp" />
+
+        <!-- 保持 -->
+        <ImageButton
+            android:id="@+id/callHoldButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/textView4"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/image_button_background"
+            android:contentDescription="@string/hold"
+            android:focusable="true"
+            android:onClick="onHoldButtonClicked"
+            android:src="@mipmap/ic_call_hold" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/callHangupButton"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:text="　暂停　"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

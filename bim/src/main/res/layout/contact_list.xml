@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/callSearchLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="8dip">
+
+            <TextView
+                android:id="@+id/callSearchText"
+                style="@style/MediumFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"
+                android:textColor="@color/grey"
+                android:layout_marginRight="5dip"
+                android:text="@string/service_gui_CALL" />
+
+            <TextView
+                android:id="@+id/callSearchContact"
+                style="@style/MediumFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"
+                android:textColor="@color/list_text_selection_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@anim/background_fadein"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/buttonSeparatorView"
+                android:src="@mipmap/contact_list_v_separator"
+                android:layout_width="1dip"
+                android:layout_height="40dip"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="center_vertical" />
+
+            <ImageButton
+                android:id="@+id/contactCallButton"
+                android:src="@mipmap/call"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/service_gui_CALL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="15dp"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/contact_list_divider" />
+
+        <LinearLayout
+            android:layout_width="7dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/chatseparator" />
+    </RelativeLayout>
+
+    <ExpandableListView
+        android:id="@+id/contactListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingTop="22dp"
+        android:choiceMode="singleChoice"
+        android:dividerHeight="0dip"
+        android:divider="@null"
+        android:groupIndicator="@null"
+        android:cacheColorHint="@color/white" />
+</LinearLayout>

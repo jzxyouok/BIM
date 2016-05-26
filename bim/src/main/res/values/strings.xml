@@ -1,0 +1,1295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="system_title">博图纵横即时通讯</string>
+    <string name="module_name">博图纵横即时通讯</string>
+    <string name="ACCOUNT_TYPE">org.jitsi.android.account</string>
+    <string name="send_process_signal">Send Process Signal</string>
+    <string name="stop_osgi_framework">Stop OSGi Framework</string>
+    <string name="in_call_with">In call with </string>
+    <string name="settings">设置</string>
+    <string name="username_hint">用户名</string>
+    <string name="username_label">用户名:</string>
+    <string name="password">密码</string>
+    <string name="password_label">密码:</string>
+    <string name="store_password">记住密码</string>
+    <string name="sign_in">登录</string>
+    <string name="network">网络协议</string>
+    <string name="choose_network">选择网络协议</string>
+    <string-array name="networks_array">
+        <item>SIP</item>
+        <item>XMPP</item>
+    </string-array>
+    <string-array name="networks_array_values">
+        <item>SIP</item>
+        <item>Jabber</item>
+    </string-array>
+    <string name="enter_name_or_number">输入名称或号码</string>
+    <string name="hang_up">挂断</string>
+    <string name="reversal_camera">切换前后摄像头</string>
+    <string name="accept_call_video">接听</string>
+    <string name="hold">搁置</string>
+    <string name="show_call_info">通讯信息</string>
+    <string name="show_call_zrtp_info">"Call ZRTP info</string>
+    <string name="video_resolution">视频分辨率</string>
+    <string name="low_video_resolution">320x240</string>
+    <string name="high_video_resolution">640x480</string>
+    <string name="exit_app">退出</string>
+    <string name="service_gui_UNKNOWN_CONTACT">未知</string>
+    <string name="service_gui_ACCOUNT_ME">我</string>
+    <string name="service_gui_ACCOUNT_SETTINGS">帐户设置</string>
+    <string name="service_gui_ACCOUNT_DISCONNECTED">%s 断开连接</string>
+    <string name="service_gui_CONTACT_PAUSED_TYPING">停止输入</string>
+    <string name="service_gui_CONTACT_TYPING">正在输入&#8230;</string>
+    <string name="service_gui_BUSY_STATUS">忙碌</string>
+
+    <string name="service_gui_ADD_AUTHORIZED_CONTACT">Add %s to your contact list</string>
+    <string name="service_gui_ADD_GROUP_LOCAL_ERROR">
+        Failed to add group with name: %s. The problem occurred during a local IO operation.
+    </string>
+    <string name="service_gui_ADD_GROUP_EXIST_ERROR">
+        The group %s already exists in your contact list. Please choose another name.
+    </string>
+    <string name="service_gui_ADD_GROUP_NET_ERROR">
+        Failed to add group with name: %s. The problem occurred due to a network failure.
+        Please check your network connection and try again.
+    </string>
+    <string name="service_gui_ADD_GROUP_ERROR">
+        Failed to add group with name: %s.
+    </string>
+    <string name="service_gui_ADD_GROUP_EMPTY_NAME">
+        The group name must not be empty.
+    </string>
+    <string name="service_gui_ADD_GROUP_HINT">
+        Enter group name
+    </string>
+    <string name="service_gui_ADD_GROUP">Create group</string>
+    <string name="service_gui_AT">at</string>
+    <string name="service_gui_AUTHENTICATION_REJECTED">contact has rejected your authorization request.</string>
+    <string name="service_gui_AUTHENTICATION_WINDOW_TITLE">%s authentication</string>
+    <string name="service_gui_AUTHENTICATION_REQUESTED">Authentication requested</string>
+    <string name="service_gui_AUTHENTICATION_REQUESTED_SERVER">The %s server has requested your authentication.</string>
+    <string name="service_gui_AUTHORIZE">Authorize</string>
+    <string name="service_gui_AUTHORIZATION_ACCEPTED">contact has accepted your authorization request.</string>
+    <string name="service_gui_AUTHORIZATION_REQUESTED">Authorization requested</string>
+    <string name="service_gui_AUTHORIZATION_REQUESTED_INFO">The %s contact requests your authorization.</string>
+    <string name="service_gui_AUTHORIZATION_RESPONSE">Authorization response</string>
+    <string name="service_gui_CREATE_GROUP_NAME">
+        In the field below enter the name of the group you would like to create.
+    </string>
+    <string name="service_gui_DENY">Deny</string>
+    <string name="service_gui_DURATION">duration</string>
+    <string name="service_gui_EDITED_AT">edited at %s</string>
+    <string name="service_gui_IGNORE">Ignore</string>
+    <string name="service_gui_INFO">Info</string>
+    <string name="service_gui_LAST_MSG_CORRECTION">Last message correction</string>
+    <string name="service_gui_NOT_AUTHORIZED">未经授权</string>
+    <string name="service_gui_OUTGOING_CALL">Outgoing call</string>
+    <string name="service_gui_OUTGOING_CALL_MSG">Connecting with %s…</string>
+    <string name="service_gui_TYPE_YOUR_REQUEST">Type your request here</string>
+    <string name="service_gui_REQUEST">发起请求</string>
+    <string name="service_gui_REQUEST_AUTHORIZATION">请求授权</string>
+    <string name="service_gui_REQUEST_AUTHORIZATION_MSG">
+        Can\'t add %1$s to your Contact List.
+        %1$s must authorize your request to add him/her.
+        Please enter your request below.
+    </string>
+    <string name="service_gui_RE_REQUEST_AUTHORIZATION">重新请求授权</string>
+    <string name="service_gui_REMOVE">删除</string>
+    <string name="service_gui_REMOVE_CONTACT">删除联系人</string>
+    <string name="service_gui_REMOVE_CONTACT_TEXT">
+        <DIV>Are you sure you want to remove <B> %s </B><BR/>from your contact list?</DIV>
+    </string>
+    <string name="service_gui_REMOVE_ACCOUNT">移除账户</string>
+    <string name="service_gui_REMOVE_ACCOUNT_MESSAGE">你确定要删除 %s 吗?</string>
+    <string name="service_gui_RESTORING">正在恢复&#8230;</string>
+    <string name="service_gui_SHUTDOWN_IN_PROGRESS">正在关闭&#8230;</string>
+    <string name="service_gui_VOLUME_GAIN_LEVEL">Volume gain level: %s%%</string>
+    <string name="service_gui_WARN_CALL_IN_PROGRESS">正在通话，退出操作&#8230;</string>
+
+    <!-- Sign in -->
+    <string name="service_gui_SIGN_IN">登录</string>
+    <string name="service_gui_SIGN_OUT">退出登录</string>
+    <string name="service_gui_CREATE_ACCOUNT">切换账户</string>
+    <string name="service_gui_LOGIN_FAILED">登录失败</string>
+    <string name="service_gui_LOGIN_NETWORK_ERROR">
+        Unable to log in with account: User name: {0}, Server name: {1}, due to a network failure. Please check your network connection.
+    </string>
+    <string name="service_gui_LOGIN_GENERAL_ERROR">
+        An error occurred while logging in with account: User name: {0}, Server name: {1}:{2}.
+    </string>
+    <string name="service_gui_LOGIN_INTERNAL_ERROR">
+        An error occurred while logging in with account: User name: {0}, Server name: {1}. This is most probably an internal application error. Please report the problem to our developers mailing list (dev@bim.java.net).
+    </string>
+    <string name="service_gui_LOGIN_INVALID_PROPERTIES_ERROR">
+        Unable to log in with account: User name: {0}, Server name: {1}, due to an account configuration problem. Please check your account configuration.
+    </string>
+    <string name="service_gui_USERNAME_NULL">
+        Please fill your username and password.
+    </string>
+    <string name="service_gui_USER_EXISTS_ERROR">
+        This user already exists on the selected network. Please choose another user or network.
+    </string>
+    <string name="service_gui_SPECIFY_SERVER">
+        Please complete the server part of your account.
+    </string>
+    <string name="service_gui_ACCOUNT_CREATION_FAILED">
+        We failed to create your account due to the following error:
+    </string>
+
+    <!-- Plugin reconnect -->
+    <string name="plugin_reconnectplugin_CONNECTION_FAILED_MSG">
+        Connection failed for the following account:\n
+        User name: {0}, Server name: {1}.\n
+        Please check your settings or contact your network administrator for more information.
+    </string>
+    <string name="plugin_reconnectplugin_NETWORK_DOWN">
+        网络连接丢失!
+    </string>
+
+    <!-- General -->
+    <string name="service_gui_AVATAR_SET_ERROR">Failed to set avatar for %s</string>
+    <string name="service_gui_CLOSE">关闭</string>
+    <string name="service_gui_CLOSE_CHAT">关闭聊天</string>
+    <string name="service_gui_CLOSE_ALL_CHATS">关闭所有聊天</string>
+    <string name="service_gui_COPY_MESSAGE_TEXT">复制文本</string>
+    <string name="service_gui_OK">是的</string>
+    <string name="service_gui_YES">确认</string>
+    <string name="service_gui_NO">不是</string>
+    <string name="service_gui_CANCEL">取消</string>
+    <string name="service_gui_SEARCH">搜索</string>
+    <string name="service_gui_ADD_CONTACT">添加联系人</string>
+    <string name="service_gui_ON">On</string>
+    <string name="service_gui_ONLINE">在线</string>
+    <string name="service_gui_OFF">Off</string>
+    <string name="service_gui_OFFLINE">离线</string>
+    <string name="service_gui_FFC_STATUS">空闲</string>
+    <string name="service_gui_AWAY_STATUS">离开</string>
+    <string name="service_gui_DND_STATUS">请勿打扰</string>
+    <string name="service_gui_RETRY">重试</string>
+    <string name="service_gui_SEND_LOGS_QUESTION">BIM has just recovered after serious crash. Do you want to send the logs ?</string>
+    <string name="service_gui_ERROR">Error</string>
+    <string name="service_gui_ERROR_WAS">Error was: {0}</string>
+    <string name="service_gui_WARNING">Warning</string>
+    <string name="service_gui_AUTHENTICATION_FAILED">
+        Authentication failed for {0}. The password you entered is not valid.
+    </string>
+    <string name="service_gui_CONNECTION_FAILED_MSG">Connection failed for the
+        following account: User name: {0}, Server name: {1}. Please check your
+        network connection or contact your network administrator for more
+        information.</string>
+    <string name="service_gui_NEW_ACCOUNT">Add new account</string>
+    <string name="service_gui_LOADING">Loading</string>
+    <string name="service_gui_ACCOUNTS">Accounts</string>
+    <string name="service_gui_CALL">呼叫</string>
+    <string name="service_gui_VIDEO_CALL">视频通话</string>
+    <string name="service_gui_CONTACTS">Contacts</string>
+    <string name="service_gui_ENTER_NAME_OR_NUMBER">Enter name or number</string>
+    <string name="service_gui_MISSED_CALLS_TOOL_TIP">Missed calls from:</string>
+    <string name="service_gui_MOVE">Move</string>
+    <string name="service_gui_MOVE_SUBCONTACT">Move contact</string>
+    <string name="service_gui_MOVE_SUBCONTACT_MSG">
+    Select the contact or the group, where you would like to move the selected contact.
+    </string>
+    <string name="service_gui_MOVE_SUBCONTACT_FAILED">
+    The contact you have chosen is the same as \n the source one. Please choose another contact!
+    </string>
+    <string name="service_gui_MOVE_SUBCONTACT_QUESTION">
+    Are you sure you want to move %1$s to %2$s?
+    </string>
+    <string name="service_gui_MOVE_TO_GROUP">Move to group</string>
+    <string name="service_gui_MOVE_CONTACT">Move Contact</string>
+    <string name="service_gui_MOVE_CONTACT_ERROR">Contact cannot be moved</string>
+    <string name="service_gui_MSG_DELIVERY_FAILURE">
+        The above message could not be delivered
+    </string>
+    <string name="service_gui_MSG_DELIVERY_NOT_SUPPORTED">
+        The protocol you are using doesn\'\'t \
+        support offline messages. You could try to reach {0} through another \
+        protocol or wait until he/she becomes online.
+    </string>
+    <string name="service_gui_MSG_DELIVERY_INTERNAL_ERROR">
+        An internal error occurred. This is most probably a bug. Please report it here: https://bmtech.org/Development/BugsAndIssues.
+    </string>
+    <string name="service_gui_MSG_DELIVERY_ERROR">
+        Failed to deliver message.
+    </string>
+    <string name="service_gui_MSG_DELIVERY_UNKNOWN_ERROR">
+        Unknown error has occurred while delivering your message.
+    </string>
+    <string name="service_gui_MSG_NOT_DELIVERED">
+        A network problem occurred. Please check your network configuration and try again.
+    </string>
+    <string name="service_gui_MSG_SEND_CONNECTION_PROBLEM">
+        You should be connected to be able to send messages.
+    </string>
+
+    <!-- Logs -->
+    <string name="service_gui_SEND_LOGS_SUBJECT">BIM logs</string>
+    <string name="service_gui_SEND_LOGS_TITLE">Send BIM logs</string>
+    <string name="service_gui_SEND_LOGS">Send logs</string>
+
+    <!-- Call -->
+    <string name="service_gui_VOLUME_CONTROL_TOOL_TIP">Adjust volume</string>
+    <string name="service_gui_VOLUME_CONTROL_TITLE">Output volume gain level</string>
+    <string name="service_gui_MIC_CONTROL_TITLE">Microphone gain level</string>
+    <string name="service_gui_MUTE_BUTTON_TOOL_TIP">Adjust microphone sound</string>
+    <string name="service_gui_LOCAL_VIDEO_BUTTON_TOOL_TIP">Toggle video</string>
+    <string name="service_gui_SEND_MESSAGE">Send a message</string>
+    <string name="service_gui_CALL_WITH">Call with</string>
+
+    <!-- OTR plugin -->
+    <string name="plugin_otr_menu_TITLE">Secure chat</string>
+    <string name="plugin_otr_menu_START_OTR">Start private conversation</string>
+    <string name="plugin_otr_menu_END_OTR">End private conversation</string>
+    <string name="plugin_otr_menu_REFRESH_OTR">Refresh private conversation</string>
+    <string name="plugin_otr_menu_AUTHENTICATE_BUDDY">Authenticate buddy</string>
+    <string name="plugin_otr_menu_WHATS_THIS">What\'s this</string>
+    <string name="plugin_otr_menu_CB_AUTO">Automatically initiate private messaging</string>
+    <string name="plugin_otr_menu_CB_ENABLE">Enable private messaging</string>
+    <string name="plugin_otr_menu_CB_REQUIRE">Require private messaging</string>
+    <string name="plugin_otr_menu_CB_RESET">Reset</string>
+    <string name="plugin_otr_menu_OTR_TOOLTIP">聊天加密</string>
+    <string name="plugin_otr_authbuddydialog_HELP_URI">https://jitsi.org/GSOC2009/OTR</string>
+    <string name="plugin_otr_authbuddydialog_AUTHENTICATION_INFO">Authenticating a buddy helps
+    ensure that the person you are talking to is who he or she claims to be.
+    To verify the fingerprint, contact your buddy via some other authenticated
+    channel, such as the telephone or GPG-signed email. Each of you should tell
+    your fingerprint to the other. If everything matches up, you should indicate
+    in the following dialog that you *have* verified the fingerprint.</string>
+    <string name="plugin_otr_authbuddydialog_LOCAL_FINGERPRINT">Fingerprint for you, {0}: {1}</string>
+    <string name="plugin_otr_authbuddydialog_REMOTE_FINGERPRINT">Purported fingerprint for {0}: {1}</string>
+    <string name="plugin_otr_authbuddydialog_CANCEL">取消</string>
+    <string name="plugin_otr_authbuddydialog_HELP">帮助</string>
+    <string name="plugin_otr_authbuddydialog_TITLE">验证好友</string>
+    <string name="plugin_otr_authbuddydialog_AUTHENTICATE_BUDDY">验证好友</string>
+    <string name="plugin_otr_authbuddydialog_I_HAVE">I have</string>
+    <string name="plugin_otr_authbuddydialog_I_HAVE_NOT">I have not</string>
+    <string name="plugin_otr_authbuddydialog_VERIFY_ACTION">verified that this is in fact the correct fingerprint for {0}.</string>
+    <string name="plugin_otr_authbuddydialog_FINGERPRINT_CHECK">Please enter the fingerprint you recieved from {0}.</string>
+    <string name="plugin_otr_configform_MY_PRIVATE_KEYS">My Private Keys</string>
+    <string name="plugin_otr_configform_KNOWN_FINGERPRINTS">Known Fingerprints</string>
+    <string name="plugin_otr_configform_CB_AUTO">Automatically initiate private messaging</string>
+    <string name="plugin_otr_configform_CB_ENABLE">Enable private messaging</string>
+    <string name="plugin_otr_configform_CB_REQUIRE">Require private messaging</string>
+    <string name="plugin_otr_configform_NO_KEY_PRESENT">No key present</string>
+    <string name="plugin_otr_configform_GENERATE">Generate</string>
+    <string name="plugin_otr_configform_REGENERATE">Re-generate</string>
+    <string name="plugin_otr_configform_FINGERPRINT">Fingerprint</string>
+    <string name="plugin_otr_configform_VERIFY_FINGERPRINT">Verify Fingerprint</string>
+    <string name="plugin_otr_configform_FORGET_FINGERPRINT">Forget Fingerprint</string>
+    <string name="plugin_otr_configform_COLUMN_NAME_CONTACT">Contact</string>
+    <string name="plugin_otr_configform_COLUMN_NAME_VERIFIED_STATUS">Verified</string>
+    <string name="plugin_otr_configform_COLUMN_VALUE_VERIFIED_TRUE">Yes</string>
+    <string name="plugin_otr_configform_COLUMN_VALUE_VERIFIED_FALSE">No</string>
+    <string name="plugin_otr_configform_VERIFY_STATUS">Verified: %s</string>
+    <string name="plugin_otr_GENERATE_DLG_TITLE">Private key generation</string>
+    <string name="plugin_otr_GENERATE_QUESTION">Do you want to generate key for %s</string>
+    <string name="plugin_otr_REGENERATE_QUESTION">Do you want to re-generate key for %s</string>
+    <string name="plugin_otr_activator_unverifiedsessionwarning">{0} is contacting you from an unrecognized computer. You should &lt;a href="bim://{1}/{2}?{3}">authenticate {0}&lt;/a>.</string>
+    <string name="plugin_otr_activator_unverifiedsessionstared">&lt;b>Unverified&lt;/b> private conversation with {0} started.</string>
+    <string name="plugin_otr_activator_sessionstared">Private conversation with {0} started.</string>
+    <string name="plugin_otr_activator_sessionfinished">{0} has ended his/her private conversation with you; you should do the same.</string>
+    <string name="plugin_otr_activator_sessionlost">Private conversation with {0} lost.</string>
+    <string name="plugin_otr_activator_historyon">
+        {0} is recording this conversation on your device.
+        You can &lt;a href=\"bim://{1}/{2}\">turn off chat history here&lt;/a>.
+    </string>
+    <string name="plugin_otr_activator_historyoff">
+        {0} is NOT recording this conversation.
+        You can &lt;a href=\"bim://{1}/{2}\">activate chat history here&lt;/a>.
+    </string>
+    <string name="plugin_otr_activator_sessionfinishederror">
+        Your message was not sent. Please end your private conversation with {0}.
+    </string>
+    <string name="plugin_otr_activator_smpaborted">
+        {0} has aborted the authentication process.
+    </string>
+    <string name="plugin_otr_activator_smperror">
+        An error occurred in the authentication process.
+    </string>
+    <string name="plugin_otr_activator_unencryptedmsgreceived">
+        The message was received unencrypted.
+    </string>
+    <string name="plugin_otr_activator_unreadablemsgreceived">
+        {0} sent you an unreadable encrypted message.
+    </string>
+    <string name="plugin_otr_activator_requireencryption">
+        Your message was not sent. Private messaging is required.
+    </string>
+    <string name="plugin_otr_activator_unreadablemsgreply">
+        You sent {0} an unreadable encrypted message.
+        Please end your private conversation with {1} or refresh it.
+    </string>
+    <string name="plugin_otr_activator_fallbackmessage">
+        &lt;span style="font-weight: bold;">{0} is trying to initiate an encrypted
+        &lt;a href="http://en.wikipedia.org/wiki/Off-the-Record_Messaging">
+        Off-The-Record conversation&lt;/a> with you.
+        However, your software does not support
+        Off-The-Record messaging. For more information see
+        &lt;a href="http://en.wikipedia.org/wiki/Off-the-Record_Messaging">
+        http://en.wikipedia.org/wiki/Off-the-Record_Messaging&lt;/a>&lt;/span>
+    </string>
+    <!-- Update checker -->
+    <string name="plugin_updatechecker_DIALOG_TITLE">Install Updates</string>
+    <string name="plugin_updatechecker_DIALOG_MESSAGE">
+    A new version of {0} is available for download.
+    </string>
+    <string name="plugin_updatechecker_BUTTON_DOWNLOAD">Download</string>
+    <string name="plugin_updatechecker_BUTTON_INSTALL">Install</string>
+    <string name="plugin_updatechecker_UPDATE_MENU_ENTRY">
+        Check for updates
+    </string>
+    <string name="plugin_updatechecker_DIALOG_NOUPDATE">
+        Your version is up to date.
+    </string>
+    <string name="plugin_updatechecker_DIALOG_NOUPDATE_TITLE">
+        No new version
+    </string>
+    <string name="plugin_updatechecker_DIALOG_IN_PROGRESS_TITLE">
+        In progress
+    </string>
+    <string name="plugin_updatechecker_DIALOG_IN_PROGRESS">
+        Downloading update is in progress.
+    </string>
+    <string name="plugin_updatechecker_DIALOG_DOWNLOADED_TITLE">
+        Download finished
+    </string>
+    <string name="plugin_updatechecker_DIALOG_DOWNLOADED">
+        Update is downloaded and ready to be installed.
+    </string>
+
+    <!-- From resources.properties -->
+    <string name="service_gui_JANUARY">一月</string>
+    <string name="service_gui_FEBRUARY">二月</string>
+    <string name="service_gui_MARCH">三月</string>
+    <string name="service_gui_APRIL">四月</string>
+    <string name="service_gui_MAY">五月</string>
+    <string name="service_gui_JUNE">六月</string>
+    <string name="service_gui_JULY">七月</string>
+    <string name="service_gui_AUGUST">八月</string>
+    <string name="service_gui_SEPTEMBER">九月</string>
+    <string name="service_gui_OCTOBER">十月</string>
+    <string name="service_gui_NOVEMBER">十一月</string>
+    <string name="service_gui_DECEMBER">十二月</string>
+
+    <string name="service_gui_NOT_IN_CONTACT_LIST_GROUP_NAME">不在联系人列表</string>
+    <string name="service_gui_CONNECTING_ACCOUNT">已通话 %s</string>
+    <string name="service_gui_CONNECTED_STATUS">已通话</string>
+    <string name="service_gui_CONNECTING_STATUS">正在连接</string>
+    <string name="service_gui_CONNECTING_EARLY_MEDIA_STATUS">正在连接*</string>
+    <string name="service_gui_DISCONNECTED_STATUS">已断开</string>
+    <string name="service_gui_DISCONNECTING_ACCOUNT">已断开 %s</string>
+    <string name="service_gui_FAILED_STATUS">呼叫失败</string>
+    <string name="service_gui_INCOMING_CALL_STATUS">来电</string>
+    <string name="service_gui_INITIATING_CALL_STATUS">发起呼叫</string>
+    <string name="service_gui_LOCALLY_ON_HOLD_STATUS">Locally on hold</string>
+    <string name="service_gui_MUTUALLY_ON_HOLD_STATUS">Mutually On Hold</string>
+    <string name="service_gui_PRESENCE_NOT_SUPPORTED">Presence is not supported by %s</string>
+    <string name="service_gui_REFERRED_STATUS">Referred</string>
+    <string name="service_gui_REMOTELY_ON_HOLD_STATUS">Remotely on hold</string>
+    <string name="service_gui_REMOVE_CONTACT_NOT_CONNECTED">You need to be connected in order to remove this contact. Please sign in and try again.</string>
+    <string name="service_gui_REMOVE_GROUP">Remove group</string>
+    <string name="service_gui_RINGING_STATUS">响铃</string>
+    <string name="service_gui_UNKNOWN_STATUS">Unknown state</string>
+    <string name="service_gui_WAITING_AUTHORIZATION">等待授权</string>
+
+    <string name="service_gui_PROACTIVE_NOTIFICATION">正在输入</string>
+    <string name="service_gui_MSG_RECEIVED">{0} wrote</string>
+
+    <!-- Add contact -->
+    <string name="service_gui_ADD">Add</string>
+    <string name="service_gui_ADD_CONTACT_TO">Add contact to</string>
+    <string name="service_gui_ADD_CONTACT_ERROR_TITLE">Add contact Error</string>
+    <string name="service_gui_ADD_CONTACT_NOT_CONNECTED">
+        You need to be connected in in order to add a contact.
+        Please sign in to the selected provider and try again.
+    </string>
+    <string name="service_gui_ADD_CONTACT_ERROR">
+        Failed to add contact with id: %s
+    </string>
+    <string name="service_gui_ADD_CONTACT_EXIST_ERROR">
+        The contact %s already exists in your contact list.
+    </string>
+    <string name="service_gui_ADD_CONTACT_NETWORK_ERROR">
+        Server did not respond to our request adding contact with id: %s.
+    </string>
+    <string name="service_gui_ADD_CONTACT_NOT_SUPPORTED">
+        Failed to add contact with id: %s. Operation not supported.
+    </string>
+    <string name="service_gui_CONTACT_NAME">ID or Number</string>
+    <string name="service_gui_CREATE">Create</string>
+    <string name="service_gui_CREATE_GROUP">Create group...</string>
+    <string name="service_gui_DISPLAY_NAME">Display name</string>
+    <string name="service_gui_SELECT_ACCOUNT">Select account</string>
+    <string name="service_gui_SELECT_GROUP">Select group</string>
+    <string name="service_gui_SELECT_NO_GROUP">No group</string>
+
+    <!-- Presence status -->
+    <string name="service_gui_EDIT_STATUS_MSG_TIP">Set status message</string>
+    <string name="service_gui_SET_STATUS">Change status</string>
+    <string name="service_gui_PRESENCE_EDIT_TITLE">Presence status {0}</string>
+    <string name="service_gui_SELECT_AVATAR">Select new avatar image</string>
+
+    <!-- Call info -->
+    <string name="service_gui_callinfo_TECHNICAL_CALL_INFO">Technical Call Info</string>
+    <string name="service_gui_callinfo_CALL_INFORMATION">Call information</string>
+    <string name="service_gui_callinfo_CALL_IDENTITY">Identity</string>
+    <string name="service_gui_callinfo_PEER_COUNT">Participant count</string>
+    <string name="service_gui_callinfo_IS_CONFERENCE_FOCUS">Conference focus</string>
+    <string name="service_gui_callinfo_IS_DEFAULT_ENCRYPTED">Encryption enabled</string>
+    <string name="service_gui_callinfo_CALL_TRANSPORT">Signalling call transport</string>
+    <string name="service_gui_callinfo_CALL_DURATION">Call duration</string>
+    <string name="service_gui_callinfo_CODEC">Codec / Frequency</string>
+    <string name="service_gui_callinfo_NA">N.A.</string>
+    <string name="service_gui_callinfo_VIDEO_SIZE">Video size</string>
+    <string name="service_gui_callinfo_AUDIO_INFO">Audio info</string>
+    <string name="service_gui_callinfo_VIDEO_INFO">Video info</string>
+    <string name="service_gui_callinfo_LOCAL_IP">Local IP / Port</string>
+    <string name="service_gui_callinfo_REMOTE_IP">Remote IP / Port</string>
+    <string name="service_gui_callinfo_BANDWITH">Bandwith</string>
+    <string name="service_gui_callinfo_LOSS_RATE">Loss rate</string>
+    <string name="service_gui_callinfo_RTT">RTT</string>
+    <string name="service_gui_callinfo_JITTER">Jitter</string>
+    <string name="service_gui_callinfo_MEDIA_STREAM_TRANSPORT_PROTOCOL">Media stream transport protocol</string>
+    <string name="service_gui_callinfo_MEDIA_STREAM_RTP">RTP</string>
+    <string name="service_gui_callinfo_MEDIA_STREAM_SRTP">SRTP</string>
+    <string name="service_gui_callinfo_KEY_EXCHANGE_PROTOCOL">Key exchange protocol</string>
+    <string name="service_gui_callinfo_ICE_CANDIDATE_EXTENDED_TYPE">ICE candidate extended type</string>
+    <string name="service_gui_callinfo_ICE_STATE">ICE Processing State</string>
+    <string name="service_gui_callinfo_ICE_STATE_WAITING">Gather candidates</string>
+    <string name="service_gui_callinfo_ICE_STATE_RUNNING">Connectivity checks</string>
+    <string name="service_gui_callinfo_ICE_STATE_COMPLETED">Completed</string>
+    <string name="service_gui_callinfo_ICE_STATE_FAILED">Failed</string>
+    <string name="service_gui_callinfo_ICE_LOCAL_HOST_ADDRESS">Local host IP / Port</string>
+    <string name="service_gui_callinfo_ICE_LOCAL_REFLEXIVE_ADDRESS">Local reflexive IP / Port</string>
+    <string name="service_gui_callinfo_ICE_LOCAL_RELAYED_ADDRESS">Local relayed IP / Port</string>
+    <string name="service_gui_callinfo_ICE_REMOTE_HOST_ADDRESS">Remote host IP / Port</string>
+    <string name="service_gui_callinfo_ICE_REMOTE_REFLEXIVE_ADDRESS">Remote reflexive IP / Port</string>
+    <string name="service_gui_callinfo_ICE_REMOTE_RELAYED_ADDRESS">Remote relayed IP / Port</string>
+    <string name="service_gui_callinfo_TOTAL_HARVESTING_TIME">Total harvesting time</string>
+    <string name="service_gui_callinfo_HARVESTING_TIME">Harvesting time</string>
+    <string name="service_gui_callinfo_HARVESTING_MS_FOR">ms (for</string>
+    <string name="service_gui_callinfo_HARVESTS">harvests)</string>
+    <string name="service_gui_callinfo_DECODED_WITH_FEC">Packets decoded with FEC</string>
+    <string name="service_gui_callinfo_DISCARDED_PERCENT">Packets currently being discarded</string>
+    <string name="service_gui_callinfo_DISCARDED_TOTAL">Number of discarded packets</string>
+    <string name="service_gui_callinfo_ADAPTIVE_JITTER_BUFFER">Adaptive jitter buffer</string>
+    <string name="service_gui_callinfo_JITTER_BUFFER_DELAY">Jitter buffer</string>
+
+    <!-- Security info -->
+    <string name="service_gui_SECURITY_INFO">Security information</string>
+    <string name="service_gui_security_SECURE_AUDIO">Secure audio</string>
+    <string name="service_gui_security_AUDIO_NOT_SECURED">Audio not secure</string>
+    <string name="service_gui_security_SECURE_VIDEO">Secure video</string>
+    <string name="service_gui_security_VIDEO_NOT_SECURED">Video not secure</string>
+    <string name="service_gui_security_NO_VIDEO">No video</string>
+    <string name="service_gui_security_CIPHER">Cipher: {0}</string>
+    <string name="service_gui_security_VERIFY_TOAST">Call security enabled! Tap to compare security string now or use the menu later.</string>
+    <string name="service_gui_security_CALL_SECURED_TOOLTIP">Call secured. Fore more information press here.</string>
+    <string name="service_gui_security_CALL_NOT_SECURED_TOOLTIP">Call not secure.</string>
+    <string name="service_gui_security_CALL_SECURED_COMPARE_TOOLTIP">Press here to compare security secret with your partner.</string>
+    <string name="service_gui_security_COMPARE_WITH_PARTNER_SHORT">Compare with partner:</string>
+    <string name="service_gui_security_STRING_COMPARED">String compared!</string>
+    <string name="service_gui_security_SECURITY_ALERT">Trying to secure call. Will disconnect in</string>
+    <string name="service_gui_security_CLEAR_SAS">Clear</string>
+    <string name="service_gui_security_CONFIRM_SAS">Confirm</string>
+
+    <!-- Security certificates -->
+    <string name="service_gui_ALWAYS_TRUST">Always trust this certificate</string>
+    <string name="service_gui_CERT_DIALOG_TITLE">验证证书</string>
+    <string name="service_gui_CERT_DIALOG_DESCRIPTION_TXT">
+    &lt;html>{0} can\'\'t verify the identity
+    of the server when connecting to&lt;br/>
+        &lt;b>{1}&lt;/b>.&lt;br/>&lt;br/>
+    The certificate is not trusted, which means that the server\'\'s
+    identity cannot be automatically verified.&lt;br/>&lt;br/>
+    Do you want to continue connecting?&lt;br/>
+    For more information, click "Show Certificate".&lt;/html>
+    </string>
+    <string name="service_gui_CERT_DIALOG_DESCRIPTION_TXT_NOHOST">
+    &lt;html>{0} can\'\'t verify the
+    identity of the server\'\'s certificate.&lt;br/>&lt;br/>
+    The certificate is not trusted, which means that the server\'\'s
+    identity cannot&lt;br/> be automatically verified.
+    Do you want to continue connecting?&lt;br/>&lt;br/>
+    For more information, click "Show Certificate".&lt;/html>
+    </string>
+    <string name="service_gui_CERT_DIALOG_CLIENT_DESCRIPTION_TXT">
+    &lt;html>{0} can\'\'t verify the identity
+    of the connecting client.&lt;br/>&lt;br/>
+    The certificate is not trusted, which means that the client\'\'s
+    identity cannot<br/> be automatically verified.
+    Do you want to accept the connection?&lt;br/>&lt;br/>
+    For more information, click "Show Certificate".&lt;/html>
+    </string>
+    <string name="service_gui_CERT_DIALOG_PEER_DESCRIPTION_TXT">
+    &lt;html>{0} can\'\'t verify the identity
+    of the peer {1}.&lt;br/>&lt;br/>
+    The certificate is not trusted, which means that the peer\'\'s
+    identity cannot&lt;br/> be automatically verified.
+    Do you want to continue connecting?&lt;br/>&lt;br/>
+    For more information, click "Show Certificate".&lt;/html>
+    </string>
+    <string name="service_gui_CONTINUE_ANYWAY">仍然继续</string>
+    <string name="service_gui_CERT_INFO_ISSUED_TO">&lt;html>&lt;b>Issued To&lt;/b>&lt;/html></string>
+    <string name="service_gui_CERT_INFO_CN">Common Name:</string>
+    <string name="service_gui_CERT_INFO_O">Organization:</string>
+    <string name="service_gui_CERT_INFO_C">Country Name:</string>
+    <string name="service_gui_CERT_INFO_ST">State or Province Name:</string>
+    <string name="service_gui_CERT_INFO_L">Locality Name:</string>
+    <string name="service_gui_CERT_INFO_ISSUED_BY">&lt;html>&lt;b>Issued By&lt;/b>&lt;/html></string>
+    <string name="service_gui_CERT_INFO_OU">Organizational Unit:</string>
+    <string name="service_gui_CERT_INFO_VALIDITY">&lt;html>&lt;b>Validity&lt;/b>&lt;/html></string>
+    <string name="service_gui_CERT_INFO_ISSUED_ON">Issued On:</string>
+    <string name="service_gui_CERT_INFO_EXPIRES_ON">Expires On:</string>
+    <string name="service_gui_CERT_INFO_FINGERPRINTS">&lt;html>&lt;b>Fingerprints&lt;/b>&lt;/html></string>
+    <string name="service_gui_CERT_INFO_CERT_DETAILS">&lt;html>&lt;b>Certificate Info&lt;/b>&lt;/html></string>
+    <string name="service_gui_CERT_INFO_SER_NUM">Serial Number:</string>
+    <string name="service_gui_CERT_INFO_VER">Version:</string>
+    <string name="service_gui_CERT_INFO_SIGN_ALG">Signature Algorithm:</string>
+    <string name="service_gui_CERT_INFO_PUB_KEY_INFO">&lt;html>&lt;b>Public Key Info&lt;/b>&lt;/html></string>
+    <string name="service_gui_CERT_INFO_ALG">Algorithm:</string>
+    <string name="service_gui_CERT_INFO_PUB_KEY">Public Key:</string>
+    <string name="service_gui_CERT_INFO_KEY_BYTES_PRINT">%1$s bytes: %2$s</string>
+    <string name="service_gui_CERT_INFO_KEY_BITS_PRINT">%s bits</string>
+    <string name="service_gui_CERT_INFO_EXP">Exponent:</string>
+    <string name="service_gui_CERT_INFO_KEY_SIZE">Key Size:</string>
+    <string name="service_gui_CERT_INFO_SIGN">Signature:</string>
+    <string name="service_gui_CONTINUE">继续</string>
+    <string name="service_gui_SHOW_CERT">显示证书</string>
+    <string name="service_gui_HIDE_CERT">隐藏证书</string>
+
+    <!-- ZRTP -->
+    <string name="impl_media_security_WARNING_NO_RS_MATCH">
+        &lt;html>No retained shared secret available.&lt;br/>&lt;b>SAS verification is recommended&lt;/b>&lt;/html>
+    </string>
+    <string name="impl_media_security_WARNING_NO_EXPECTED_RS_MATCH">
+        &lt;html>An expected retained shared secret is missing.&lt;br/>&lt;b>SAS verification is required&lt;/b>&lt;br/>If SAS codes do not match then hangup and try again&lt;/html>
+    </string>
+    <string name="impl_media_security_SEVERE_GENERIC_MSG">
+        &lt;html>A severe security problem was detected.&lt;br/>&lt;b>Your call is not secure&lt;/b>&lt;br/>Error code: {0}&lt;/html>
+    </string>
+    <string name="impl_media_security_INTERNAL_PROTOCOL_ERROR">
+        &lt;html>Internal protocol error occurred.&lt;br/>&lt;b>Your call is not secure&lt;/b>&lt;br/>Error code: {0}&lt;/html>
+    </string>
+    <string name="impl_media_security_CHECKSUM_MISMATCH">
+        &lt;html>Internal ZRTP packet checksum mismatch.&lt;br/>If you see this message often this may mean a denial-of-service attack!&lt;/html>
+    </string>
+    <string name="impl_media_security_RETRY_RATE_EXCEEDED">
+        &lt;html>Too much retries during security negotiation. This may mean that the other party has internet connection problems.&lt;br/>&lt;b>Your call is not secure&lt;/b>&lt;br/>Error code: {0}&lt;/html>
+    </string>
+    <string name="impl_media_security_DATA_SEND_FAILED">
+        &lt;html>Failed to send encryption data. Internet data connection or peer is down.&lt;br/>&lt;b>Your call is not secure&lt;/b>&lt;br/>Error code: {0}&lt;/html>
+    </string>
+    <string name="impl_media_security_SECURITY_OFF">
+        Call encryption support off
+    </string>
+    <string name="impl_media_security_SECURITY_ON">
+        Call encryption support on
+    </string>
+
+    <!-- Settings -->
+    <string name="service_gui_SETTINGS_NOT_SET">(Not set)</string>
+    <string name="service_gui_COMMIT_PROGRESS_TITLE">"Committing..."</string>
+    <string name="service_gui_COMMIT_PROGRESS_MSG">Storing account changes, please wait...</string>
+
+    <!-- Connection settings -->
+    <string name="service_gui_CONN_NO_CERT">None</string>
+    <!-- Encoding settings -->
+    <string name="service_gui_ENC_AUDIO_TITLE">Audio encoding</string>
+    <string name="service_gui_ENC_VIDEO_TITLE">Video encoding</string>
+    <string name="service_gui_ENC_OVERRIDE_GLOBAL">Override global</string>
+
+    <!-- Security settings -->
+    <string name="service_gui_SEC_ENABLE_ENCRYPTION">Encryption</string>
+    <!-- Security protocols dialog -->
+    <string name="service_gui_SEC_PROTOCOLS_TITLE">Security protocols</string>
+    <string name="service_gui_SEC_PROTOCOLS_MSG">
+        Please select desired protocols in order
+    </string>
+    <string name="service_gui_SEC_PROTOCOLS_OK">Save</string>
+    <string name="service_gui_SEC_PROTOCOLS_CANCEL">Discard</string>
+    <string name="service_gui_LIST_EMPTY">None</string>
+
+    <string name="service_gui_SEC_ZRTP_SIGNALING_ON">
+        ZRTP will be advertised over signaling protocol
+    </string>
+    <string name="service_gui_SEC_ZRTP_SIGNALING_OFF">
+        There will be no ZRTP advertisement
+    </string>
+
+    <!-- STURN/Jingle Nodes list -->
+    <string name="service_gui_SERVERS_LIST_EMPTY">
+        The list is empty. Click to add new entry...
+    </string>
+    <string name="service_gui_SERVERS_LIST_SAVE">保存</string>
+    <string name="service_gui_SERVERS_LIST_CANCEL">取消</string>
+    <string name="service_gui_SERVERS_LIST_REMOVE">移除</string>
+    <string name="service_gui_SERVERS_LIST_ADD_SERVER">添加服务</string>
+    <!-- Jingle Nodes edit -->
+    <string name="service_gui_JINGLE_EDIT_SUPPORT_RELAY">Support relay</string>
+    <string name="service_gui_JINGLE_EDIT_JID">JID Address</string>
+    <!-- STUN edit -->
+    <string name="service_gui_STUN_EDIT_SUPPORT_TURN">Support TURN</string>
+    <string name="service_gui_STUN_EDIT_ADDRESS">IP Address</string>
+    <string name="service_gui_STUN_EDIT_PORT">Server port</string>
+    <string name="service_gui_STUN_EDIT_TURN_USER">TURN username</string>
+    <string name="service_gui_STUN_EDIT_PASSWORD">Password</string>
+    <!-- Security preferences -->
+    <string name="service_gui_PREF_SECURITY_GENERAL">General</string>
+    <string name="service_gui_PREF_SECURITY_ENCRYPTION">
+        Communication encryption
+    </string>
+    <string name="service_gui_PREF_SECURITY_ENC_PROTOCOLS">
+        Encryption protocols
+    </string>
+    <string name="service_gui_PREF_SECURITY_ZRTP">ZRTP options</string>
+    <string name="service_gui_PREF_SECURITY_ZRTP_SIGNALING">
+        ZRTP signaling
+    </string>
+    <string name="service_gui_PREF_SECURITY_SDES">SDes options</string>
+    <string name="service_gui_PREF_SECURITY_SDES_TITLE">
+        SDES cipher suites
+    </string>
+    <string name="service_gui_PREF_SECURITY_SDES_DLG_TITLE">
+        Select desired cipher suites
+    </string>
+    <string name="service_gui_PREF_SECURITY_RTP_SAVP">
+        RTP/SAVP indication
+    </string>
+    <string name="service_gui_PREF_SECURITY_RTP_SAVP_TITLE">
+        RTP/SAVP indication method
+    </string>
+    <!-- SIP preferences -->
+    <string name="service_gui_SIP_GENERAL">User name and password</string>
+    <string name="service_gui_SIP_USER">User id</string>
+    <string name="service_gui_SIP_PASSWORD">Enter password</string>
+    <string name="service_gui_SIP_STORE_PASS">Remember password</string>
+    <string name="service_gui_SIP_DISPLAYNAME">Displayname</string>
+    <string name="service_gui_SIP_ADVANCED">Advanced</string>
+    <string name="service_gui_SIP_CONNECTION">Connection</string>
+    <string name="service_gui_SIP_CONNECTION_DESC">
+        Set connection details...
+    </string>
+    <string name="service_gui_SIP_CONN_GENERAL">General</string>
+    <string name="service_gui_SIP_REGISTRAR">Registrar</string>
+    <string name="service_gui_SIP_PORT">Server port</string>
+    <string name="service_gui_SIP_AUTH_NAME">Authorization name</string>
+    <string name="service_gui_SIP_TLS_CERT">Client TLS certificate</string>
+    <string name="service_gui_SIP_TLS_CERT_PROMPT">
+        Please select TLS certificate
+    </string>
+    <string name="service_gui_SIP_DTMF">DTMF method</string>
+    <string name="service_gui_SIP_DTMF_TITLE">DTMF method selection</string>
+    <string name="service_gui_SIP_PROXY">Proxy options</string>
+    <string name="service_gui_SIP_PROXY_AUTO">Configure proxy automatically</string>
+    <string name="service_gui_SIP_PROXY_ADDR">Proxy address</string>
+    <string name="service_gui_SIP_PROXY_PORT">Proxy port</string>
+    <string name="service_gui_SIP_PREF_TRANSPORT">Preferred transport</string>
+    <string name="service_gui_SIP_PREF_TRANS_TITLE">Proxy preferred transport selection</string>
+    <string name="service_gui_SIP_KEEP_ALIVE_CAT">Keep alive</string>
+    <string name="service_gui_SIP_KEEP_ALIVE">Keep alive method</string>
+    <string name="service_gui_SIP_KEEP_ALIVE_TITLE">
+        Keep alive method selection
+    </string>
+    <string name="service_gui_SIP_KEEP_ALIVE_INT">Keep alive interval</string>
+    <string name="service_gui_SIP_VOICEMAIL">Voicemail</string>
+    <string name="service_gui_SIP_WMI">Message Waiting (MWI)</string>
+    <string name="service_gui_SIP_VMAIL_URI">Voicemail Subscription URI</string>
+    <string name="service_gui_SIP_VMAIL_CHECK_URI">Voicemail check URI</string>
+    <string name="service_gui_SIP_PRESENCE">Presence</string>
+    <string name="service_gui_SIP_PRESENCE_DESC">
+        Configure presence options...
+    </string>
+    <string name="service_gui_SIP_PRESENCE_OPTIONS">Presence Options</string>
+    <string name="service_gui_SIP_ENABLE_SIMPLE">
+        Enable presence (SIMPLE)
+    </string>
+    <string name="service_gui_SIP_FORCE_P2P">
+        Force peer-to-peer presence mode
+    </string>
+    <string name="service_gui_SIP_CONTACTS_POLLING">
+        Offline contacts polling period(in s.)
+    </string>
+    <string name="service_gui_SIP_SUBSCRIPTION_DUR">
+        Default subscription duration(in s.)
+    </string>
+    <string name="service_gui_SIP_CONTACTLIST_OPTIONS">
+        Contactlist Options
+    </string>
+    <string name="service_gui_SIP_CLIST_TYPE">Type</string>
+    <string name="service_gui_SIP_CLIST_TYPE_DLG_TITLE">
+        Contact list type selection
+    </string>
+    <string name="service_gui_SIP_CLIST_URI">
+        Contactlist server URI/Address
+    </string>
+    <string name="service_gui_SIP_CLIST_SIP_CREDENTIALS">
+        Use SIP credentials
+    </string>
+    <string name="service_gui_SIP_CLIST_USER">User</string>
+    <string name="service_gui_SIP_CLIST_PASS">Password</string>
+    <!-- Common preferences -->
+    <string name="service_gui_PREF_AUDIO_ENCODING">Audio encoding</string>
+    <string name="service_gui_PREF_AUDIO_ENC_SUMMARY">
+        Select audio formats
+    </string>
+    <string name="service_gui_PREF_VIDEO_ENCODING">Video encoding</string>
+    <string name="service_gui_PREF_VIDEO_ENC_SUMMARY">
+        Select video formats
+    </string>
+    <string name="service_gui_PREF_ENCRYPTION">Encryption settings</string>
+    <!-- Jabber preferences -->
+    <string name="service_gui_JBR_USER_CATEGORY">User name and password</string>
+    <string name="service_gui_JBR_USER">User id</string>
+    <string name="service_gui_JBR_PASSWORD">Enter password</string>
+    <string name="service_gui_JBR_STORE_PASSWORD">Remember password</string>
+    <string name="service_gui_JBR_ADVANCED">Advanced</string>
+    <string name="service_gui_JBR_CONNECTION">Connection</string>
+    <string name="service_gui_JBR_CONN_SUMMARY">
+        Set connection details...
+    </string>
+    <string name="service_gui_JBR_CONN_GENERAL">General</string>
+    <string name="service_gui_JBR_GMAIL_NOTIFICATIONS">
+        Gmail notifications for new messages
+    </string>
+    <string name="service_gui_JBR_GOOGLE_CONTACTS_SEARCH">
+        Google Contacts search
+    </string>
+    <string name="service_gui_JBR_ALLOW_NON_SECURE">
+        Allow non-secure connections
+    </string>
+    <string name="service_gui_JBR_DTMF_METHOD">DTMF method</string>
+    <string name="service_gui_JBR_DTMF_SUMMARY">DTMF method selection</string>
+    <string name="service_gui_JBR_SERVER_OPTIONS">Server options</string>
+    <string name="service_gui_JBR_OVERRIDE_SERVER">
+        Override server default options
+    </string>
+    <string name="service_gui_JBR_SERVER">Connect Server</string>
+    <string name="service_gui_JBR_PORT">Port</string>
+    <string name="service_gui_JBR_RESOURCE">Resource</string>
+    <string name="service_gui_JBR_RES_AUTO_GEN">Auto generate resource</string>
+    <string name="service_gui_JBR_RESURCE_NAME">Resource name</string>
+    <string name="service_gui_JBR_PRIORITY">Priority</string>
+    <string name="service_gui_JBR_ICE">ICE</string>
+    <string name="service_gui_JBR_ICE_SUMMARY">
+        Configure ICE options...
+    </string>
+    <string name="service_gui_JBR_ICE_GENERAL">General</string>
+    <string name="service_gui_JBR_USE_ICE">Use ICE</string>
+    <string name="service_gui_JBR_USE_GOOGLE_ICE">
+        Use Google\'s Jingle/ICE(experimental)
+    </string>
+    <string name="service_gui_JBR_USE_UPNP">Use UPnP</string>
+    <string name="service_gui_JBR_AUTO_STUN_DICOVERY">
+        Auto discover STUN/TURN servers
+    </string>
+    <string name="service_gui_JBR_USE_DEFAULT_STUN">
+        Use BIM\'s STUN server in case no other servers are available
+    </string>
+    <string name="service_gui_JBR_STUN_LIST">
+        Additional STUN/TURN servers
+    </string>
+    <string name="service_gui_JBR_JINGLE_NODES">Jingle Nodes</string>
+    <string name="service_gui_JBR_JINGLE_SUMMARY">Use jingle nodes</string>
+    <string name="service_gui_JBR_JINGLE_AUTO">
+        Auto discover Jingle Nodes relays
+    </string>
+    <string name="service_gui_JBR_JINGLE_LIST">Additional Jingle Nodes</string>
+    <string name="service_gui_JBR_TELEPHONY">Telephony</string>
+    <string name="service_gui_JBR_TELEPHONY_SUMMARY">
+        Configure telephony options...
+    </string>
+    <string name="service_gui_JBR_DISABLE_JINGLE">
+        Disable Jingle (audio and video calls with XMPP)
+    </string>
+    <string name="service_gui_JBR_TELE_DOMAIN">Telephony domain</string>
+    <string name="service_gui_JBR_GTALK_DOMAIN">
+        Domain that will use GTalk call
+    </string>
+
+    <!-- Account preference categories -->
+    <string name="pref_cat_account">pref_cat_account</string>
+    <string name="pref_cat_audio_encoding">pref_cat_enc_audio</string>
+    <string name="pref_cat_video_encoding">pref_cat_enc_video</string>
+
+    <!-- SIP preferences -->
+    <string name="pref_screen_sip_connection">pref.screen.sip.connection</string>
+    <string name="pref_screen_sip_presence">pref.screen.sip.presence</string>
+
+    <string name="pref_cat_sip_advanced">pref.cat.sip.advanced</string>
+    <string name="pref_cat_sip_connection">pref.cat.sip.connection</string>
+    <string name="pref_cat_sip_conn_general">pref.cat.sip.conn.general</string>
+    <string name="pref_cat_sip_proxy">pref.cat.sip.proxy</string>
+    <string name="pref_cat_sip_keep_alive">pref.cat.sip.keep_alive</string>
+    <string name="pref_cat_sip_voicemail">pref.cat.sip.voicemail</string>
+    <string name="pref_cat_sip_presence_opt">pref.sip.cat.presence_options</string>
+    <string name="pref_cat_sip_contactlist">pref.cat.sip.contactlist</string>
+
+    <!-- Jabber preferences -->
+    <string name="pref_screen_jbr_conn">pref.screen.jbr.connection</string>
+    <string name="pref_screen_jbr_ice">pref.screen.jbr.ice</string>
+    <string name="pref_screen_jbr_tele">pref.screen.jbr.telephony</string>
+
+    <string name="pref_cat_jbr_advanced">pref.cat.jbr.advanced</string>
+    <string name="pref_cat_jbr_conn_general">pref.cat.jbr.conn.general</string>
+    <string name="pref_cat_jbr_server_opts">pref.cat.jbr.server.options</string>
+    <string name="pref_cat_jbr_resource">pref.cat.jbr.resource</string>
+    <string name="pref_cat_jbr_ice_general">pref.cat.jbr.ice.general</string>
+    <string name="pref_cat_jbr_jnodes">pref.cat.jbr.jinglenodes</string>
+
+    <!-- Account preferences -->
+    <string name="pref_key_user_id">pref_key_user_id</string>
+    <string name="pref_key_password">pref_key_password</string>
+    <string name="pref_key_store_password">pref_key_store_password</string>
+    <string name="pref_key_server_address">pref_key_server_address</string>
+    <string name="pref_key_display_name">pref_key_display_name</string>
+    <string name="pref_key_auth_name">pref_key_auth_name</string>
+    <string name="pref_key_server_port">pref_key_server_port</string>
+    <string name="pref_key_default_domain">pref_key_default_domain</string>
+    <string name="pref_key_proxy_address">pref_key_proxy_address</string>
+    <string name="pref_key_proxy_port">pref_key_proxy_port</string>
+    <string name="pref_key_preferred_transport">pref_key_preferred_transport</string>
+    <string name="pref_key_is_presence_enabled">pref_key_is_presence_enabled</string>
+    <string name="pref_key_force_p2p">pref_key_force_p2p</string>
+    <string name="pref_key_client_tls_cert">pref_key_client_tls_cert</string>
+    <string name="pref_key_proxy_auto_config">pref_key_proxy_auto_config</string>
+    <string name="pref_key_polling_period">pref_key_polling_period</string>
+    <string name="pref_key_subscription_period">pref_key_subscription_period</string>
+    <string name="pref_key_keep_alive_method">pref_key_keep_alive_method</string>
+    <string name="pref_key_keep_alive_interval">pref_key_keep_alive_interval</string>
+    <string name="pref_key_dtmf_method">pref_key_dtmf_method</string>
+    <string name="pref_key_mwi_enabled">pref_key_mwi_enabled</string>
+    <string name="pref_key_voicemail_uri">pref_key_voicemail_uri</string>
+    <string name="pref_key_voicemail_check_uri">pref_key_voicemail_check_uri</string>
+    <!-- Contact list -->
+    <string name="pref_key_contact_list_type">pref_key_contact_list_type</string>
+    <string name="pref_key_clist_use_sip_credentials">pref_key_clist_use_sip_credentials</string>
+    <string name="pref_key_clist_server_uri">pref_key_clist_server_uri</string>
+    <string name="pref_key_clist_user">pref_key_clist_user</string>
+    <string name="pref_key_clist_password">pref_key_clist_password</string>
+
+    <string name="pref_key_is_server_overridden">pref_key_is_server_overridden</string>
+    <!-- Not present int SIP, but new in XMPP -->
+    <string name="pref_key_gmail_notifications">pref_key_gmail_notifications</string>
+    <string name="pref_key_google_contact_enabled">pref_key_google_contact_enabled</string>
+    <string name="pref_key_allow_non_secure_conn">pref_key_allow_non_secure_conn</string>
+    <string name="pref_key_auto_gen_resource">pref_key_auto_gen_resource</string>
+    <string name="pref_key_resource_name">pref_key_resource_name</string>
+    <string name="pref_key_resource_priority">pref_key_resource_priority</string>
+    <!-- XMPP ICE -->
+    <string name="pref_key_ice_enabled">pref_key_ice_enabled</string>
+    <string name="pref_key_google_ice_enabled">pref_key_google_ice_enabled</string>
+    <string name="pref_key_upnp_enabled">pref_key_upnp_enabled</string>
+    <string name="pref_key_auto_discover_jingle">pref_key_auto_discover_jingle</string>
+    <string name="pref_key_use_default_stun">pref_key_use_default_stun</string>
+
+    <string name="pref_key_stun_turn_servers">pref_key_stun_turn_servers</string>
+
+    <string name="pref_key_use_jingle_nodes">pref_key_use_jingle_nodes</string>
+    <string name="pref_key_auto_relay_dicovery">pref_key_auto_relay_dicovery</string>
+
+    <string name="pref_key_jingle_node_list">pref_key_jingle_node_list</string>
+
+    <!-- XMPP telephony -->
+    <string name="pref_key_calling_disabled">pref_key_calling_disabled</string>
+    <string name="pref_key_override_phone_suffix">pref_key_override_phone_suffix</string>
+    <string name="pref_key_tele_bypass_gtalk_caps">pref_key_tele_bypass_gtalk_caps</string>
+    <!-- Security preferences -->
+    <string name="pref_cat_security_general">pref.cat.security.general</string>
+    <string name="pref_cat_security_zrtp">pref.cat.security.zrtp</string>
+    <string name="pref_cat_security_sdes">pref.cat.security.sdes</string>
+
+    <string name="pref_key_enable_encryption">pref_key_enable_encryption</string>
+    <string name="pref_key_enc_protocols_dialog">pref_key_enc_protos_dialog</string>
+    <string name="pref_key_enc_sipzrtp_attr">pref_key_enc_sipzrtp_attr</string>
+
+    <string name="pref_key_enc_savp_option">pref_key_enc_savp_option</string>
+    <string name="pref_key_enc_cipher_suites">pref_key_ecn_cipher_suites</string>
+
+    <!-- General settings -->
+    <string name="pref_cat_settings_general">pref.cat.settings.general</string>
+    <string name="service_gui_settings_GENERAL">General</string>
+
+    <string name="service_gui_settings_ENABLED_STR">Enabled</string>
+    <string name="service_gui_settings_DISABLED_STR">Disabled</string>
+
+    <!-- Message settings -->
+    <string name="pref_cat_settings_msg">pref.cat.settings.msg</string>
+    <string name="service_gui_settings_MSG">Message</string>
+    <!-- Group messages in one window -->
+    <string name="pref_key_multichat_window">pref.key.msg.multichat_window</string>
+    <string name="service_gui_settings_MULTICHAT_WINDOW">Multichat window</string>
+    <string name="service_gui_settings_MULTICHAT_ON">Group chat messages in one window</string>
+    <string name="service_gui_settings_MULTICHAT_OFF">Separate window for ech conversation</string>
+    <!-- Log chat history -->
+    <string name="pref_key_history_logging">pref.key.msg.history_logging</string>
+    <string name="service_gui_settings_HISTORY_LOGGING">Chat history logging</string>
+    <string name="service_gui_settings_HISTORY_LOG_ON">Log chat history</string>
+    <string name="service_gui_settings_HISTORY_LOG_OFF">Chat history disabled</string>
+    <!-- Show x recent messages in new chats -->
+    <string name="pref_key_show_history">pref.key.msg.show_history</string>
+    <string name="service_gui_settings_SHOW_HISTORY">Show history</string>
+    <string name="pref_key_chat_history_size">pref.key.msg.chat_history_size</string>
+    <string name="service_gui_settings_CHAT_HISTORY_SIZE">Show recent messages</string>
+    <string name="service_gui_settings_CHAT_HISTORY_SUMMARY">%s recent messages in new chats</string>
+    <string name="service_gui_settings_CHAT_HISTORY_DLG_TITLE">How many recent messages should be displayed ?</string>
+    <!-- Tell others when we are writing to them -->
+    <string name="pref_key_typing_notifications">pref.key.msg.typing_notifications</string>
+    <string name="service_gui_settings_TYPING_NOTIFICATIONS">Tell others when we are writing to them</string>
+    <!-- Enable smiley replacement -->
+    <string name="pref_key_smiley_replacement">pref.key.msg.smiley_replacement</string>
+    <string name="plugin_chatconfig_replacement_ENABLE_SMILEY_STATUS">Enable smiley replacement</string>
+    <!-- Bring chat window to front(not sure if this makes sense on Android, so omitted) -->
+    <!-- Use task bar / dock alerts on incoming calls and chats -->
+    <string name="pref_key_chat_alerts">pref.key.msg.chat_alerts</string>
+    <string name="service_gui_settings_CHAT_ALERTS">Show status bar notifications</string>
+    <!-- Leave chat rooms when closing window(ommited on Android for now) -->
+    <!-- ... -->
+
+    <!-- Auto away -->
+    <!-- Not sure how to implement it on android - leave for now -->
+
+    <!-- Notifications -->
+    <string name="pref_cat_settings_notifications">pref.cat.settings.notifications</string>
+    <string name="service_gui_settings_NOTIFICATIONS">Notifications</string>
+    <!-- Popup notifications type -->
+    <string name="pref_key_popup_handler">pref.key.notification.popup_handler</string>
+    <string name="service_gui_settings_POPUP_HANDLER">Popup notifications type</string>
+    <!-- Status bar notifications handler -->
+    <string name="impl_popup_status_bar">Status bar notifications</string>
+
+    <!-- Events -->
+    <string name="service_gui_settings_EVENTS_TITLE">事件</string>
+    <string name="service_gui_settings_EVENTS_SUMMARY">配置单独的通知</string>
+
+    <!-- Notification strings -->
+    <string name="plugin_notificationconfig_event_IncomingCall">来电</string>
+    <string name="plugin_notificationconfig_event_IncomingCall_description">来电提示.</string>
+    <string name="plugin_notificationconfig_event_SecurityMessage">Security Message</string>
+    <string name="plugin_notificationconfig_event_SecurityMessage_description">Security message description</string>
+    <string name="plugin_notificationconfig_event_IncomingFile">Incoming File</string>
+    <string name="plugin_notificationconfig_event_LogFilesArchived">Log Files Archived</string>
+    <string name="plugin_notificationconfig_event_CallSecurityError">Call Security Error</string>
+    <string name="plugin_notificationconfig_event_CallSecurityError_description">Call security error description</string>
+    <string name="plugin_notificationconfig_event_NetworkNotifications">Network Notifications</string>
+    <string name="plugin_notificationconfig_event_NetworkNotifications_description">Network notification description</string>
+    <string name="plugin_notificationconfig_event_Dialing">Dialing</string>
+    <string name="plugin_notificationconfig_event_Dialing_description">Dialing description</string>
+    <string name="plugin_notificationconfig_event_ProactiveNotification">Typing Notifications</string>
+    <string name="plugin_notificationconfig_event_ProactiveNotification_description">Proactive typing notification description</string>
+    <string name="plugin_notificationconfig_event_CallSecurityOn">Call Security On</string>
+    <string name="plugin_notificationconfig_event_CallSecurityOn_description">Call security on description</string>
+    <string name="plugin_notificationconfig_event_IncomingMessage">Incoming Message</string>
+    <string name="plugin_notificationconfig_event_IncomingMessage_description">Incoming message description</string>
+    <string name="plugin_notificationconfig_event_OutgoingCall">呼出通话</string>
+    <string name="plugin_notificationconfig_event_OutgoingCall_description">呼叫描述</string>
+    <string name="plugin_notificationconfig_event_BusyCall">无人接听</string>
+    <string name="plugin_notificationconfig_event_BusyCall_description">无人接听描述</string>
+    <string name="plugin_notificationconfig_event_CallSaved">Call Saved</string>
+    <string name="plugin_notificationconfig_event_HangUp">挂断</string>
+    <string name="plugin_notificationconfig_event_HangUp_description">Hang up description</string>
+    <string name="plugin_notificationconfig_popup_notification">Popup notification</string>
+    <string name="plugin_notificationconfig_notification_sound">Sound on notification device</string>
+    <string name="plugin_notificationconfig_playback_sound">Sound on playback device</string>
+    <string name="plugin_notificationconfig_vibration">Vibration</string>
+
+    <!-- Jitsi icon -->
+    <string name="pref_key_show_jitsi_icon">org.jitsi.android.show_icon</string>
+    <string name="service_gui_settings_SHOW_ICON">Display Jitsi icon</string>
+    <!-- Locale -->
+    <string name="pref_key_locale">pref.key.locale</string>
+    <string name="service_gui_settings_LOCALE">Interface language</string>
+    <!-- Call settings -->
+    <string name="pref_cat_settings_call">pref.cat.settings.call</string>
+    <string name="service_gui_settings_CALL">Call</string>
+    <!-- Remove special characters from phone number -->
+    <string name="pref_key_normalize_pnumber">pref.key.call.remove.special</string>
+    <string name="service_gui_settings_NORMALIZE_NUMBER">Special symbols in phone numbers</string>
+    <string name="service_gui_settings_NORMALIZE_ON">Special symbols will be removed from the number</string>
+    <string name="service_gui_settings_NORMALIZE_OFF">No phone number modifications</string>
+    <!-- Convert letters in phone numbers -->
+    <string name="pref_key_accept_alpha_pnumbers">pref.key.call.convert.letters</string>
+    <string name="service_gui_settings_ALLOW_ALPHA_PNUMBER">Letters in phone numbers</string>
+    <string name="service_gui_settings_ALLOW_ALPHA_ON"><![CDATA[*e.g. +1–800–MYPHONE –> +1–800–694663]]></string>
+    <string name="service_gui_settings_ALLOW_ALPHA_OFF">No phone number modifications</string>
+    <!-- Audio settings -->
+    <string name="pref_cat_settings_audio">pref.cat.settings.audio</string>
+    <string name="service_gui_settings_AUDIO">Audio</string>
+    <!-- Echo cancellation -->
+    <string name="pref_key_audio_echo_cancel">pref.key.audio.echo_cancel</string>
+    <string name="service_gui_settings_ECHO_CANCEL">回声消除</string>
+    <string name="service_gui_settings_ECHO_CANCEL_ON">Enabled</string>
+    <string name="service_gui_settings_ECHO_CANCEL_OFF">Disabled</string>
+    <!-- Auto gain control -->
+    <string name="pref_key_audio_agc">pref.key.audio.agc</string>
+    <string name="service_gui_settings_AGC">自动增益</string>
+    <string name="service_gui_settings_AGC_ON">Enabled</string>
+    <string name="service_gui_settings_AGC_OFF">Disabled</string>
+    <!-- Denoise -->
+    <string name="pref_key_audio_denoise">pref.key.audio.denoise</string>
+    <string name="service_gui_settings_DENOISE">噪声抑制</string>
+    <string name="service_gui_settings_DENOISE_ON">Enabled</string>
+    <string name="service_gui_settings_DENOISE_OFF">Disabled</string>
+    <!-- Audio encodings -->
+    <string name="service_gui_settings_AUDIO_CODECS_TITLE">音频编解码</string>
+    <string name="service_gui_settings_AUDIO_CODECS_SUMMARY">Adjust audio encodings</string>
+    <!-- Video settings -->
+    <string name="pref_cat_settings_video">pref.cat.settings.video</string>
+    <string name="service_gui_settings_VIDEO">视频</string>
+    <!-- Video system -->
+    <string name="pref_key_video_system">pref.key.video.video_system</string>
+    <string name="service_gui_settings_SYSTEM_ANDROIDCAMERA">AndroidCamera</string>
+    <string name="service_gui_settings_SYSTEM_MEDIARECORDER">MediaRecorder</string>
+    <!-- Camera used -->
+    <string name="pref_key_video_camera">pref.key.video.camera</string>
+    <string name="service_gui_settings_CAMERA">摄像头</string>
+    <string name="service_gui_settings_NO_CAMERA">没有发现摄像头设备</string>
+    <string name="service_gui_settings_FRONT_CAMERA">前置摄像头</string>
+    <string name="service_gui_settings_BACK_CAMERA">后置摄像头</string>
+    <string name="service_gui_settings_USE_FRONT_CAMERA">使用前置摄像头</string>
+    <string name="service_gui_settings_USE_BACK_CAMERA">使用后置摄像头</string>
+    <!-- Hardware codecs -->
+    <string name="service_gui_settings_MEDIA_CODEC_LIST">
+        解码器
+    </string>
+    <string name="service_gui_settings_MEDIA_CODEC_LIST_SUMMARY">
+        List of built-in media encoders/decoders
+    </string>
+    <string name="pref_key_video_media_codec_list">
+        pref.key.video.media_codec_list
+    </string>
+    <string name="service_gui_settings_HW_ENCODE">
+        使用硬件-编码
+    </string>
+    <string name="pref_key_video_hw_encode">
+        org.jitsi.impl.neomedia.android.hw_encode
+    </string>
+    <string name="service_gui_settings_DIRECT_SURFACE_ENCODE">
+        使用表面-编码 (需要重新启动)
+    </string>
+    <string name="pref_key_video_surface_encode">
+        org.jitsi.impl.neomedia.android.surface_encode
+    </string>
+    <string name="service_gui_settings_HW_DECODE">
+        使用硬件-解码 (需重启)
+    </string>
+    <string name="pref_key_video_hw_decode">
+        org.jitsi.impl.neomedia.android.hw_decode
+    </string>
+    <string name="service_gui_settings_DIRECT_SURFACE_DECODE">
+        使用表面-解码 (需重启)
+    </string>
+    <string name="pref_key_video_surface_decode">
+        org.jitsi.impl.neomedia.android.surface_decode
+    </string>
+    <!-- Video encodings -->
+    <string name="service_gui_settings_VIDEO_CODECS_TITLE">视频解码器</string>
+    <string name="service_gui_settings_VIDEO_CODECS_SUMMARY">调整视频编码</string>
+    <!-- Video resolution -->
+    <string name="pref_key_video_resolution">pref.key.video.resolution</string>
+    <string name="service_gui_settings_VIDEO_RESOLUTION">视频分辨率</string>
+    <string name="service_gui_settings_AUTO_RESOLUTION">Auto</string>
+    <!-- Frame rate -->
+    <string name="pref_key_video_limit_fps">pref.key.video.limit_fps</string>
+    <string name="service_gui_settings_VIDEO_FRAME_RATE">视频帧率</string>
+    <string name="service_gui_settings_LIMIT_FPS_OFF">无限制</string>
+    <string name="service_gui_settings_LIMIT_FPS_ON">调整后的帧速率</string>
+
+    <string name="pref_key_video_target_fps">pref.key.video.frame_rate</string>
+    <string name="service_gui_settings_VIDEO_TARGET_FPS">目标帧率 (per sec.)</string>
+    <string name="service_gui_settings_VIDEO_FPS_DESC">Values accepted between 5 and 30 fps</string>
+
+    <string name="pref_key_video_max_bandwidth">pref.key.video.max_bandwidth</string>
+    <string name="service_gui_settings_VIDEO_MAX_BANDWIDTH">RTP pacing threshold (kBytes/s)</string>
+
+    <string name="pref_key_video_bitrate">pref.key.video.bitrate</string>
+    <string name="service_gui_settings_VIDEO_BITRATE">视频码率 (kilobits/s)</string>
+
+    <!-- Security settings -->
+    <string name="pref_cat_settings_security">pref.cat.settings.security</string>
+    <string name="service_gui_settings_SECURITY">Security</string>
+    <!-- Chat security -->
+    <string name="service_gui_settings_CHAT_SECURITY_TITLE">Chat</string>
+    <string name="service_gui_settings_CHAT_SECURITY_SUMMARY">Chat security settings</string>
+    <!-- OTR Enable -->
+    <string name="pref_key_otr_enable">pref.key.otr.enable</string>
+    <string name="service_gui_settings_OTR_ENABLE_TITLE">Private messaging</string>
+    <string name="service_gui_settings_OTR_ENABLE_ON">Messaging encryption enabled</string>
+    <string name="service_gui_settings_OTR_ENABLE_OFF">No messaging encryption</string>
+    <!-- OTR Auto -->
+    <string name="pref_key_otr_auto">pref.key.otr.auto</string>
+    <string name="service_gui_settings_OTR_AUTO_TITLE">Auto private messaging</string>
+    <string name="service_gui_settings_OTR_AUTO_ON">Encrypts sessions automatically</string>
+    <string name="service_gui_settings_OTR_AUTO_OFF">Session have to be encrypted manually</string>
+    <!-- OTR Required -->
+    <string name="pref_key_otr_require">pref.key.otr.require</string>
+    <string name="service_gui_settings_OTR_REQUIRE_TITLE">Require private messaging</string>
+    <string name="service_gui_settings_OTR_REQUIRE_ON">Only secure sessions will be accepted</string>
+    <string name="service_gui_settings_OTR_REQUIRE_OFF">Secure messaging will be used if supported</string>
+    <!-- OTR private keys screen -->
+    <string name="service_gui_settings_OTR_PRIV_KEYS_TITLE">Private keys</string>
+    <string name="service_gui_settings_OTR_PRIV_KEYS_SUMMARY">Manage OTR private fingerprints</string>
+    <!-- OTR fingerprints screen -->
+    <string name="service_gui_settings_OTR_FINGERPRINTS_TITLE">Known fingerprints</string>
+    <string name="service_gui_settings_OTR_FINGERPRINTS_SUMMARY">Manage known fingerprints</string>
+
+    <!-- Advanced settings category -->
+    <string name="pref_cat_settings_advanced">pref.cat.settings.advanced</string>
+    <string name="service_gui_settings_ADVANCED">Advanced</string>
+
+    <!-- Logging -->
+    <string name="service_gui_settings_LOGGING_TITLE">Logging</string>
+    <string name="service_gui_settings_LOGGING_SUMMARY">Adjust logging properties</string>
+    <!-- Enable packet logging -->
+    <string name="service_gui_settings_LOGGING_ENABLE_TITLE">Packet logging</string>
+    <string name="service_gui_settings_LOGGING_ENABLE_SUMMARY_ON">Logs debug packets of various protocols</string>
+    <string name="service_gui_settings_LOGGING_ENABLE_SUMMARY_OFF">No packets will be logged</string>
+    <string name="pref_key_logging_enable">pref.key.logging.enable</string>
+
+    <!-- Protocol category -->
+    <string name="pref_cat_settings_logging_protocol">pref.cat.settings.logging.protocol</string>
+    <string name="service_gui_settings_PROTOCOL">Protocol</string>
+    <!-- SIP -->
+    <string name="service_gui_settings_LOGGING_SIP">SIP</string>
+    <string name="pref_key_logging_sip">pref.key.logging.sip</string>
+    <!-- XMPP -->
+    <string name="service_gui_settings_LOGGING_XMPP">XMPP</string>
+    <string name="pref_key_logging_xmpp">pref.key.logging.xmpp</string>
+    <!-- RTP -->
+    <string name="service_gui_settings_LOGGING_RTP">RTP</string>
+    <string name="service_gui_settings_LOGGING_RTP_SUMMARY">stores 1 packet out of every 5000</string>
+    <string name="pref_key_logging_rtp">pref.key.logging.rtp</string>
+    <!-- ICE4J -->
+    <string name="service_gui_settings_LOGGING_ICE4J">ice4j.org</string>
+    <string name="pref_key_logging_ice4j">pref.key.logging.ice4j</string>
+    <!-- Logging advanced -->
+    <string name="pref_cat_settings_logging_advanced">pref.cat.settings.logging.advanced</string>
+    <!-- File count -->
+    <string name="service_gui_settings_LOGGING_FILE_COUNT">Number of log files</string>
+    <string name="pref_key_logging_file_count">pref.key.logging.file_count</string>
+    <!-- File size limit -->
+    <string name="service_gui_settings_LOGGING_LIMIT">Maximum file size (in KB)</string>
+    <string name="pref_key_logging_limit">pref.key.logging.limit</string>
+    <!-- Opus -->
+    <string name="service_gui_settings_OPUS">Opus</string>
+    <string name="service_gui_settings_OPUS_SUMMARY">Configure Opus encoder settings</string>
+    <string name="service_gui_settings_OPUS_AUDIO_BANDWIDTH">Sampling rate</string>
+    <string name="service_gui_settings_OPUS_BITRATE">Encoder average bitrate (kbps)</string>
+    <string name="service_gui_settings_OPUS_USE_DTX">Use DTX</string>
+    <string name="service_gui_settings_OPUS_USE_FEC">Use inband FEC</string>
+    <string name="service_gui_settings_OPUS_MIN_EXPECTED_PACKET_LOSS">Minimum expected packet loss(%)</string>
+    <string name="service_gui_settings_OPUS_COMPLEXITY">Encoder complexity</string>
+    <string name="pref_key_opus_audio_bandwidth">net.java.sip.communicator.impl.neomedia.codec.audio.opus.encoder.AUDIO_BANDWIDTH</string>
+    <string name="pref_key_opus_bitrate">net.java.sip.communicator.impl.neomedia.codec.audio.opus.encoder.BITRATE</string>
+    <string name="pref_key_opus_use_dtx">net.java.sip.communicator.impl.neomedia.codec.audio.opus.encoder.DTX</string>
+    <string name="pref_key_opus_use_fec">net.java.sip.communicator.impl.neomedia.codec.audio.opus.encoder.FEC</string>
+    <string name="pref_key_opus_min_expected_packet_loss">net.java.sip.communicator.impl.neomedia.codec.audio.opus.encoder.MIN_EXPECTED_PACKET_LOSS</string>
+    <string name="pref_key_opus_complexity">net.java.sip.communicator.impl.neomedia.codec.audio.opus.encoder.COMPLEXITY</string>
+    <!-- Silk -->
+    <string name="service_gui_settings_SILK">Silk</string>
+    <string name="service_gui_settings_SILK_SUMMARY">Configure Silk encoder settings</string>
+    <string name="service_gui_settings_SILK_FEC">Use inband FEC</string>
+    <string name="service_gui_settings_SILK_ASSUME_PL">Always assume packet loss</string>
+    <string name="service_gui_settings_SILK_FEC_SAT">Speech activity threshold (0–1)</string>
+    <string name="service_gui_settings_SILK_ADVERTISE_FEC">Advertise FEC support in SDP</string>
+    <string name="pref_key_silk_fec">net.java.sip.communicator.impl.neomedia.codec.audio.silk.encoder.USE_FEC</string>
+    <string name="pref_key_silk_assume_pl">net.java.sip.communicator.impl.neomedia.codec.audio.silk.encoder.AWLAYS_ASSUME_PACKET_LOSS</string>
+    <string name="pref_key_silk_fec_sat">net.java.sip.communicator.impl.neomedia.codec.audio.silk.encoder.SPEECH_ACTIVITY_THRESHOLD</string>
+    <string name="pref_key_silk_advertise_FEC">net.java.sip.communicator.impl.neomedia.codec.audio.silk.ADVERTISE_FEC</string>
+    <!-- Global proxy -->
+    <string name="service_gui_settings_PROXY">Global proxy</string>
+    <string name="service_gui_settings_PROXY_SUMMARY">Configure proxy settings</string>
+    <string name="plugin_globalproxy_PROXY_TYPE">Proxy Type</string>
+    <string name="plugin_globalproxy_PROXY_ADDRESS">Proxy Server</string>
+    <string name="plugin_globalproxy_PROXY_USERNAME">Proxy username</string>
+    <string name="plugin_globalproxy_PROXY_PASSWORD">Proxy password</string>
+    <string name="plugin_globalproxy_PROXY_PORT">Proxy port</string>
+    <string name="pref_key_conn_proxy_type">net.java.sip.communicator.service.connectionProxyType</string>
+    <string name="pref_key_conn_proxy_address">net.java.sip.communicator.service.connectionProxyAddress</string>
+    <string name="pref_key_conn_proxy_port">net.java.sip.communicator.service.connectionProxyPort</string>
+    <string name="pref_key_conn_proxy_username">net.java.sip.communicator.service.connectionProxyUsername</string>
+    <string name="pref_key_conn_proxy_password">net.java.sip.communicator.service.connectionProxyPassword</string>
+    <!-- SIP config -->
+    <string name="service_gui_settings_SIP">SIP</string>
+    <string name="service_gui_settings_SIP_SUMMARY">Configure SIP protocol settings</string>
+    <string name="plugin_generalconfig_SIP_CLIENT_PORT">SIP client port</string>
+    <string name="plugin_generalconfig_SIP_CLIENT_SECURE_PORT">SIP client secure port</string>
+    <string name="plugin_generalconfig_SIP_SSL_PROTOCOLS">Enabled SSL/TLS protocols</string>
+    <string name="pref_cat_sip_ssl_protocols">pref.cat.sip.ssl_protocols</string>
+    <string name="pref_key_sip_client_port">net.java.sip.communicator.SIP_PREFERRED_CLEAR_PORT</string>
+    <string name="pref_key_sip_client_secure_port">net.java.sip.communicator.SIP_PREFERRED_SECURE_PORT</string>
+    <!-- DNS config -->
+    <string name="service_gui_settings_DNS">DNS</string>
+    <string name="service_gui_settings_DNS_SUMMARY">Configure DNS settings</string>
+
+    <string name="pref_cat_dns_parallel_dns">pref.cat.dns.parallel_dns</string>
+    <string name="pref_cat_dns_dnssec">pref.cat.dns.dnssec</string>
+
+    <string name="pref_key_dns_backup_dns_enabled">net.java.sip.communicator.util.dns.BACKUP_RESOLVER_ENABLED</string>
+    <string name="pref_key_dns_backup_resolver">net.java.sip.communicator.util.dns.BACKUP_RESOLVER</string>
+    <string name="pref_key_dns_backup_resolver_fallback_ip">net.java.sip.communicator.util.dns.BACKUP_RESOLVER_FALLBACK_IP</string>
+    <string name="pref_key_dns_backup_port">net.java.sip.communicator.util.dns.BACKUP_RESOLVER_PORT</string>
+    <string name="pref_key_dns_backup_redemption">net.java.sip.communicator.util.dns.DNS_REDEMPTION</string>
+    <string name="pref_key_dns_backup_patience">net.java.sip.communicator.util.dns.DNS_PATIENCE</string>
+
+    <string name="pref_key_dns_dnssec_enabled">net.java.sip.communicator.util.dns.DNSSEC_ENABLED</string>
+    <string name="pref_key_dns_dnssec_absolute">net.java.sip.communicator.util.dns.DNSSEC_ALWAYS_ABSOLUTE</string>
+    <string name="pref_key_dns_dnssec_nameservers">net.java.sip.communicator.util.dns.DNSSEC_NAMESERVERS</string>
+    <string name="pref_key_dns_dnssec_default_behaviour">net.java.sip.communicator.util.dns.DNSSEC_VALIDATION_MODE</string>
+
+    <string name="plugin_dnsconfig_DNSSEC">DNS Security (DNSSEC)</string>
+    <string name="plugin_dnsconfig_PARALLEL_DNS">Parallel DNS</string>
+    <string name="plugin_dnsconfig_border_TITLE">Backup resolver</string>
+    <string name="plugin_dnsconfig_chkBackupDnsEnabled_text">Enable parallel DNS resolving</string>
+    <string name="plugin_dnsconfig_lblBackupResolver_text">Hostname</string>
+    <string name="plugin_dnsconfig_lblBackupResolverFallbackIP_text">Fallback IP</string>
+    <string name="plugin_dnsconfig_lblBackupPort_text">Port</string>
+    <string name="plugin_dnsconfig_lblRedemption_text">Back to primary resolver</string>
+    <string name="plugin_dnsconfig_lblRedemption_description"><html>the number of prompt responses that the primary resolver needs to provide before we turn that backup off again</html></string>
+    <string name="plugin_dnsconfig_lblPatience_text">Start backup resolver after</string>
+    <string name="plugin_dnsconfig_lblPatience_description"><html>number of ms to wait for a response from primary DNS before starting the backup resolver</html></string>
+    <string name="plugin_dnsconfig_dnssec_chkEnabled">Enable DNSSEC resolver</string>
+    <string name="plugin_dnsconfig_dnssec_lblDefault">Default behavior</string>
+    <string name="plugin_dnsconfig_dnssec_chkAbsolute">Treat all domain names as absolute</string>
+    <string name="plugin_dnsconfig_dnssec_lblNameservers">Custom name servers</string>
+    <string name="plugin_dnsconfig_dnssec_lblNameserversHint"><html>Multiple servers can be delimited with a comma, e.g. 149.20.64.20, 149.20.64.21 (OARC\'s Open DNSSEC Validating Resolver)</html></string>
+    <string name="plugin_dnsconfig_dnssec_DOMAIN_NAME">Domain</string>
+    <string name="plugin_dnsconfig_dnssec_MODE">Behavior</string>
+    <string name="plugin_dnsconfig_dnssec_ENABLE_FAILED">State change failed</string>
+    <string name="plugin_dnsconfig_dnssec_ENABLE_FAILED_MSG">Change of the DNSSEC enabled state has failed.</string>
+    <string name="plugin_dnsconfig_dnssec_RESTART_WARNING"><html>Note that enabling or disabling DNSSEC disables the parallel resolver and will only take effect the next time you start Jitsi.</html></string>
+
+    <!-- Provisioning -->
+    <string name="plugin_provisioning_PROVISIONING">Provisioning</string>
+    <string name="plugin_provisioning_PROVISIONING_SUMMARY">Configure provisioning settings</string>
+    <string name="plugin_provisioning_ENABLE_DISABLE">Enable provisioning</string>
+    <string name="plugin_provisioning_AUTO">Automatically discover a provisioning URI</string>
+    <string name="plugin_provisioning_METHOD">Provisioning method</string>
+    <string name="plugin_provisioning_DHCP">DHCP</string>
+    <string name="plugin_provisioning_DNS">DNS</string>
+    <string name="plugin_provisioning_BONJOUR">Bonjour</string>
+    <string name="plugin_provisioning_MANUAL">Manually specify a provisioning URI</string>
+    <string name="plugin_provisioning_URI">URI</string>
+    <string name="plugin_provisioning_RESTART_WARNING">Note that your changes will only take effect next time you start Jitsi!</string>
+    <string name="plugin_provisioning_UUID">UUID</string>
+    <string name="plugin_provisioning_COPYTOCLIPBOARD">Copy UUID to clipboard</string>
+    <string name="plugin_provisioning_CLIPBOARD_FAILED">Failed to copy UUID to clipboard</string>
+    <string name="plugin_provisioning_EXIT_ON_FAIL">Exit the application if the provisioning fails</string>
+    <string name="plugin_provisioning_CREDENTIALS">Last stored provisioning credentials</string>
+    <string name="plugin_provisioning_REMOVE_CREDENTIALS_MESSAGE">Are you sure you want to remove provisioning password?</string>
+    <string name="plugin_provisioning_PROV_FAILED">Provisioning failed</string>
+    <string name="plugin_provisioning_PROV_FAILED_MSG"><html>Provisioning failed. {0}! <br/>Please, try again later or contact your administrator.</html></string>
+    <string name="plugin_provisioning_FORGET_PASSWORD">Forget password</string>
+
+    <string name="pref_cat_provisioning_METHOD">pref.cat.provisioning.method</string>
+    <string name="pref_cat_provisioning_CREDENTIALS">pref.cat.provisioning.credentials</string>
+
+    <string name="pref_key_provisioning_ENABLED">pref.key.provisioning.enabled</string>
+    <string name="pref_key_provisioning_URL">net.java.sip.communicator.plugin.provisioning.URL</string>
+    <string name="pref_key_provisioning_FORGET_PASSWORD">pref.key.provisioning.forget_password</string>
+    <string name="pref_key_provisioning_USERNAME">net.java.sip.communicator.plugin.provisioning.auth.USERNAME</string>
+    <string name="pref_key_provisioning_PASSWORD">net.java.sip.communicator.plugin.provisioning.auth</string>
+    <string name="pref_key_provisioning_METHOD">net.java.sip.communicator.plugin.provisioning.METHOD</string>
+    <string name="pref_key_provisioning_UUID">net.java.sip.communicator.UUID</string>
+</resources>

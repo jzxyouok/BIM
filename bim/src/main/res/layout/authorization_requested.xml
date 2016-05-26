@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/requestInfo"
+        style="@style/MediumFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/between_padding"
+        android:text="@string/service_gui_AUTHORIZATION_REQUESTED_INFO" />
+
+    <CheckBox
+        android:id="@+id/addToContacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/requestInfo"
+        android:layout_marginBottom="@dimen/between_padding"
+        android:checked="true"
+        android:text="@string/service_gui_ADD_AUTHORIZED_CONTACT" />
+
+    <TextView
+        android:id="@+id/selectGroupTxt"
+        style="@style/MediumFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addToContacts"
+        android:layout_marginBottom="@dimen/between_padding"
+        android:text="@string/service_gui_SELECT_GROUP" />
+
+    <Spinner
+        android:id="@+id/selectGroupSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/item_height"
+        android:layout_below="@+id/selectGroupTxt"
+        android:layout_marginBottom="@dimen/between_padding" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onAcceptClicked"
+            android:text="@string/service_gui_AUTHORIZE" />
+
+        <Button
+            android:id="@+id/button1"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onRejectClicked"
+            android:text="@string/service_gui_DENY" />
+
+        <Button
+            android:id="@+id/button2"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onIgnoreClicked"
+            android:text="@string/service_gui_IGNORE" />
+    </LinearLayout>
+</LinearLayout>

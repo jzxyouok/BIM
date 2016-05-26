@@ -1,0 +1,1 @@
+include ':app', ':bim', ':native-g722', ':native-ffmpeg', ':native-awtrenderer', ':native-speex', ':native-opensles', ':native-opus', ':native-openmax'
